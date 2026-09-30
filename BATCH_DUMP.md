@@ -7,7 +7,7 @@
 1. Install MMDK and a compatible REFramework build for SF6.
 2. Copy `MMDK_BatchDump.lua` beside `MMDK.lua` in the game's `reframework/autorun/` folder.
 3. Start SF6, enter Training Mode, and open REFramework's **Script Generated UI → MMDK Batch Dump**.
-4. Leave the default ID list to export every fighter known to `MMDK/tables.lua`, or enter a subset such as `1,10,26` or `1-22,26,27`.
+4. Leave the default ID list to export every fighter known to `MMDK/tables.lua`, or enter a subset such as `1,10,26` or `1-22,25-33`.
 5. Press **Start new batch**. Wait until the status says **Finished**. The script changes P2 automatically. It does not require you to open the character-select screen for each fighter.
 
 The output is written under `reframework/data/MMDK/PlayerData/<fighter>/`. Existing JSON files with the same names are replaced. Keep other moveset mods disabled if you need the game's unmodified data.

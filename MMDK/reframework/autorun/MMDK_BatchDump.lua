@@ -210,7 +210,7 @@ re.on_draw_ui(function()
     imgui.text("Training Mode: cycles P2 through the selected character IDs.")
     local changed, value = imgui.input_text("Character IDs", ids_text)
     if changed and (phase == "idle" or phase == "done" or phase == "error" or phase == "stopped") then ids_text = value end
-    imgui.text("Example: 1-22,26,27. IDs must exist in MMDK/tables.lua.")
+    imgui.text("Example: 1-22,25-33. IDs must exist in MMDK/tables.lua.")
     if phase == "idle" or phase == "done" or phase == "error" or phase == "stopped" then
         if imgui.button("Start new batch") then start(false) end
         if (phase == "error" or phase == "stopped") and #queue > 0 and imgui.button("Resume") then start(true) end
