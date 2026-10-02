@@ -19,6 +19,8 @@ local last_message = "Enter Training Mode, then press Start."
 local completed = {}
 local saved_settings = nil
 local previous_data = nil
+local wait_reason = ""
+local rebuild_requested = false
 
 local READY_FRAMES = 20
 local TIMEOUT_FRAMES = 3600
@@ -88,11 +90,15 @@ end
 
 local function ready_data(id)
     local data = player_data and player_data[2]
-    if current_p2_id() ~= id or not data or data == previous_data or data.chara_id ~= id then return nil end
-    if data.name ~= characters[id] or not data.person or not data.hit_datas then return nil end
-    if not data.triggers_by_act_id or not data.rects or not data.commands or not data.tgroups then return nil end
-    if not data.atemi or not data.charge or not data.char_info or not data.assist_combo then return nil end
-    if not data.moves_dict or not data.moves_dict.By_Name or not next(data.moves_dict.By_Name) then return nil end
+    local observed_id = current_p2_id()
+    if observed_id ~= id then return nil, "P2 ID is " .. tostring(observed_id) .. ", expected " .. id end
+    if not data then return nil, "MMDK has not built P2 data" end
+    if data == previous_data then return nil, "waiting for a new P2 data object" end
+    if data.chara_id ~= id or data.name ~= characters[id] then return nil, "P2 data belongs to a different fighter" end
+    if not data.person or not data.hit_datas then return nil, "fighter resources are not ready" end
+    if not data.triggers_by_act_id or not data.rects or not data.commands or not data.tgroups then return nil, "move resources are not ready" end
+    if not data.atemi or not data.charge or not data.char_info or not data.assist_combo then return nil, "supplemental resources are not ready" end
+    if not data.moves_dict or not data.moves_dict.By_Name or not next(data.moves_dict.By_Name) then return nil, "moves dictionary is empty" end
     return data
 end
 
@@ -108,6 +114,16 @@ local function dump_character(data)
     data:dump_char_info_json()
     data:dump_assist_combo_json()
     data:dump_moves_dict_json()
+end
+
+local function rebuild_p2_data(id)
+    rebuild_requested = true
+    tmp_fns[JOB_KEY] = function()
+        tmp_fns[JOB_KEY] = nil
+        local ok, err = pcall(function() PlayerData:new(2, true) end)
+        if not ok then stop_with_error("Cannot collect " .. characters[id] .. ": " .. tostring(err)) end
+    end
+    message("Rebuilding " .. characters[id] .. " data (" .. index .. "/" .. #queue .. ").")
 end
 
 local function start(resume)
@@ -155,14 +171,28 @@ end
 local function request_character(id)
     local manager, descs = training_objects()
     if not manager then error("Training Mode is no longer available") end
-    -- A previously loaded P2 may already have had moveset mods applied.
-    -- Wait for MMDK to create fresh player data after changing the fighter.
+    frames_waited = 0
+    stable_frames = 0
+    wait_reason = ""
+    rebuild_requested = false
+    if current_p2_id() == id then
+        -- TrainingManager may not rebuild the battle when P2 already has this ID.
+        previous_data = nil
+        if ready_data(id) then
+            phase = "waiting"
+            message("Using loaded " .. characters[id] .. " data (" .. index .. "/" .. #queue .. ").")
+            return
+        end
+        previous_data = player_data and player_data[2]
+        phase = "waiting"
+        rebuild_p2_data(id)
+        return
+    end
+    -- Wait for MMDK to create new player data after switching fighters.
     previous_data = player_data and player_data[2]
     descs[1].FighterId = id
     manager:SetFighter(descs[0], descs[1])
     manager:RequestTrainingFlow(false)
-    frames_waited = 0
-    stable_frames = 0
     phase = "waiting"
     message("Loading " .. characters[id] .. " (" .. index .. "/" .. #queue .. ").")
 end
@@ -185,14 +215,23 @@ re.on_frame(function()
 
     frames_waited = frames_waited + 1
     if frames_waited > TIMEOUT_FRAMES then
-        stop_with_error("Timed out waiting for " .. characters[id] .. ". Check the REFramework log.")
+        stop_with_error("Timed out waiting for " .. characters[id] .. ": " .. (wait_reason ~= "" and wait_reason or "data did not stay stable") .. ". Check the REFramework log.")
         return
     end
-    local data = ready_data(id)
+    local data, reason = ready_data(id)
     if not data then
+        wait_reason = reason
         stable_frames = 0
+        if not rebuild_requested and frames_waited >= 120 and current_p2_id() == id then
+            if engines and engines[2] then
+                rebuild_p2_data(id)
+            else
+                wait_reason = reason .. "; MMDK P2 engine is unavailable"
+            end
+        end
         return
     end
+    wait_reason = ""
     stable_frames = stable_frames + 1
     if stable_frames < READY_FRAMES then return end
 
@@ -235,6 +274,9 @@ re.on_draw_ui(function()
         end
     end
     imgui.text("Status: " .. last_message)
+    if phase == "waiting" then
+        imgui.text("Waiting: " .. frames_waited .. "/" .. TIMEOUT_FRAMES .. " frames; " .. (wait_reason ~= "" and wait_reason or "checking stability"))
+    end
     imgui.text("Output: reframework/data/MMDK/PlayerData/<character>/")
     imgui.tree_pop()
 end)

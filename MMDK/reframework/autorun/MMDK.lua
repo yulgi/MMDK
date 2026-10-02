@@ -24,6 +24,10 @@ local gPlayer = gBattle:get_field("Player"):get_data()
 local gResource = gBattle:get_field("Resource"):get_data()
 local gRollback = gBattle:get_field("Rollback"):get_data()
 local gWork = gBattle:get_field("Work"):get_data()
+-- move_ctr can be unavailable while battle state is loading (or after a game update).
+local function battle_move_count()
+	return tonumber(gPlayer.move_ctr) or 0
+end
 local mot_info = sdk.create_instance("via.motion.MotionInfo"):add_ref()
 local scene = sdk.call_native_func(sdk.get_native_singleton("via.SceneManager"), sdk.find_type_definition("via.SceneManager"), "get_CurrentScene()")
 local speed_sfix = sdk.find_type_definition("via.sfix"):get_field("Zero"):get_data(nil)
@@ -1189,7 +1193,7 @@ local function set_huds(player_idx)
 	tmp_fns.hud_fn = function()
 		local battle_hud = gRollback.m_battleHud
 		
-		if battle_hud and gPlayer.move_ctr > 3 and battle_hud.FighterStatusParts._items[0] then
+		if battle_hud and battle_move_count() > 3 and battle_hud.FighterStatusParts._items[0] then
 			
 			tmp_fns.hud_fn = nil
 			local p1_lifebar = battle_hud.FighterStatusParts[0].HudParts["<Control>k__BackingField"]:get_Child():get_Next():get_Next():get_Next()
@@ -1358,7 +1362,7 @@ re.on_frame(function()
 	local data = player_data[p_idx]
 	local other_data = player_data[other_p_idx]
 	
-	if reframework:is_drawing_ui() and gPlayer.move_ctr > 0 and engines[1] and (os.clock() - time_last_reset) > 0.5 then
+	if reframework:is_drawing_ui() and battle_move_count() > 0 and engines[1] and (os.clock() - time_last_reset) > 0.5 then
 		
 		if not mmsettings.research_enabled or imgui.begin_window("MMDK - Moveset Research ", true, (mmsettings.transparent_window and 128) or 0) == false then 
 			mmsettings.research_enabled = false
