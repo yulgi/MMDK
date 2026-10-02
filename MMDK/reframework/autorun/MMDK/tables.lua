@@ -1,6 +1,7 @@
 -- MMDK - Moveset Mod Development Kit for Street Fighter 6 -- Shared Tables
 -- By alphaZomega
--- May 22, 2024
+-- Character IDs below match the game's pl_type / FighterId values.
+-- Update this list only after a fighter is available in the installed game.
 
 local characters = { 
 	[1] = "Ryu", 
@@ -25,8 +26,16 @@ local characters = {
 	[20] = "E Honda", 
 	[21] = "Jamie", 
 	[22] = "Akuma", 
+	-- IDs 23 and 24 are not playable fighters in the current roster.
+	[25] = "Sagat",
 	[26] = "M Bison", 
 	[27] = "Terry", 
+	[28] = "Mai",
+	[29] = "Elena",
+	[30] = "C Viper",
+	[31] = "Alex",
+	[32] = "Ingrid",
+	[33] = "Yasmine",
 }
 
 --Table of indexes into the param of a HIT_DT_TBL, labelled by their purpose

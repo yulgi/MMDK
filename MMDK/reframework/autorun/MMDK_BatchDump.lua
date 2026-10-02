@@ -18,6 +18,7 @@ local stable_frames = 0
 local last_message = "Enter Training Mode, then press Start."
 local completed = {}
 local saved_settings = nil
+local previous_data = nil
 
 local READY_FRAMES = 20
 local TIMEOUT_FRAMES = 3600
@@ -31,8 +32,12 @@ end
 local function restore_settings()
     if not saved_settings or not mmsettings then return end
     mmsettings.enabled = saved_settings.enabled
-    for name, enabled in pairs(saved_settings.fighters) do
-        mmsettings.fighter_options[name].enabled = enabled
+    for name, settings in pairs(saved_settings.fighters) do
+        local option = mmsettings.fighter_options[name]
+        option.enabled = settings.enabled
+        for filename, enabled in pairs(settings.mods) do
+            option[filename].enabled = enabled
+        end
     end
     saved_settings = nil
 end
@@ -83,9 +88,10 @@ end
 
 local function ready_data(id)
     local data = player_data and player_data[2]
-    if current_p2_id() ~= id or not data or data.chara_id ~= id then return nil end
+    if current_p2_id() ~= id or not data or data == previous_data or data.chara_id ~= id then return nil end
     if data.name ~= characters[id] or not data.person or not data.hit_datas then return nil end
-    if not data.triggers_by_act_id or not data.rects or not data.commands then return nil end
+    if not data.triggers_by_act_id or not data.rects or not data.commands or not data.tgroups then return nil end
+    if not data.atemi or not data.charge or not data.char_info or not data.assist_combo then return nil end
     if not data.moves_dict or not data.moves_dict.By_Name or not next(data.moves_dict.By_Name) then return nil end
     return data
 end
@@ -119,34 +125,39 @@ local function start(resume)
         if not selected then stop_with_error(err); return end
         queue, index, completed = selected, 1, {}
     end
-    saved_settings = {enabled = mmsettings.enabled, fighters = {}}
-    for _, id in ipairs(queue) do
-        local name = characters[id]
-        local option = mmsettings.fighter_options[name]
-        if not option then
-            stop_with_error("No MMDK fighter option for " .. name)
+    local names = {["All Characters"] = true}
+    for _, id in ipairs(queue) do names[characters[id]] = true end
+    for name in pairs(names) do
+        if not mmsettings.fighter_options[name] then
+            stop_with_error("No MMDK fighter option for " .. name .. ". Reload MMDK after updating tables.lua.")
             return
         end
-        saved_settings.fighters[name] = option.enabled
+    end
+
+    saved_settings = {enabled = mmsettings.enabled, fighters = {}}
+    for name in pairs(names) do
+        local option = mmsettings.fighter_options[name]
+        local settings = {enabled = option.enabled, mods = {}}
+        for _, filename in ipairs(option.ordered or {}) do
+            if option[filename] then
+                settings.mods[filename] = option[filename].enabled
+                option[filename].enabled = false
+            end
+        end
+        saved_settings.fighters[name] = settings
+        option.enabled = name ~= "All Characters"
     end
     mmsettings.enabled = true
-    for _, id in ipairs(queue) do
-        mmsettings.fighter_options[characters[id]].enabled = true
-    end
     phase = "request"
     message("Starting at " .. index .. "/" .. #queue .. ".")
 end
 
 local function request_character(id)
-    local already_ready = ready_data(id)
-    if already_ready then
-        frames_waited = 0
-        stable_frames = 0
-        phase = "waiting"
-        return
-    end
     local manager, descs = training_objects()
     if not manager then error("Training Mode is no longer available") end
+    -- A previously loaded P2 may already have had moveset mods applied.
+    -- Wait for MMDK to create fresh player data after changing the fighter.
+    previous_data = player_data and player_data[2]
     descs[1].FighterId = id
     manager:SetFighter(descs[0], descs[1])
     manager:RequestTrainingFlow(false)
@@ -210,7 +221,8 @@ re.on_draw_ui(function()
     imgui.text("Training Mode: cycles P2 through the selected character IDs.")
     local changed, value = imgui.input_text("Character IDs", ids_text)
     if changed and (phase == "idle" or phase == "done" or phase == "error" or phase == "stopped") then ids_text = value end
-    imgui.text("Example: 1-22,26,27. IDs must exist in MMDK/tables.lua.")
+    imgui.text("Example: 1-22,25-33. IDs must exist in MMDK/tables.lua.")
+    imgui.text("Moveset mods are disabled during the batch and restored afterward.")
     if phase == "idle" or phase == "done" or phase == "error" or phase == "stopped" then
         if imgui.button("Start new batch") then start(false) end
         if (phase == "error" or phase == "stopped") and #queue > 0 and imgui.button("Resume") then start(true) end
