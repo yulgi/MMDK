@@ -216,11 +216,11 @@ PlayerData = {
 			gResource.VfxHolder.commonData.mStandardData,
 			gResource.VfxHolder.systemData.mStandardData,
 		}
-		for i, vfx_container in pairs(lua_get_array(data.person.VfxDatas._items)) do
+		for i, vfx_container in pairs(lua_get_array(data.person.VfxDatas._items, true)) do
 			table.insert(vfx_arrays, vfx_container.mStandardData)
 		end
 		for i, mStandardData in ipairs(vfx_arrays) do
-			for j, std_data_settings in pairs(lua_get_array(mStandardData._items)) do
+			for j, std_data_settings in pairs(lua_get_array(mStandardData._items, true)) do
 				if not std_data_settings.mData:get_IsEmpty() then
 					local vfx_gameobj = scene:call("findGameObject(System.String)", std_data_settings.mData:get_Path():match(".+(epvs.+)%.pfb"))
 					local ctr_tbl = data.vfx_by_ctr_id[std_data_settings.mID] or {elements={}}

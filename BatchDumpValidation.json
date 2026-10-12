@@ -1,0 +1,1931 @@
+{
+  "ok": true,
+  "since": "2026-10-12T23:56:36",
+  "fighter_count": 31,
+  "file_count": 341,
+  "fighters": [
+    {
+      "id": 1,
+      "name": "Ryu",
+      "files": [
+        {
+          "name": "Ryu HIT_DT.json",
+          "bytes": 11466115,
+          "modified": "2026-10-12T23:56:41"
+        },
+        {
+          "name": "Ryu triggers.json",
+          "bytes": 899674,
+          "modified": "2026-10-12T23:56:42"
+        },
+        {
+          "name": "Ryu Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:56:42"
+        },
+        {
+          "name": "Ryu tgroups.json",
+          "bytes": 17269,
+          "modified": "2026-10-12T23:56:42"
+        },
+        {
+          "name": "Ryu rects.json",
+          "bytes": 242598,
+          "modified": "2026-10-12T23:56:42"
+        },
+        {
+          "name": "Ryu commands.json",
+          "bytes": 521292,
+          "modified": "2026-10-12T23:56:42"
+        },
+        {
+          "name": "Ryu charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:56:42"
+        },
+        {
+          "name": "Ryu char_info.json",
+          "bytes": 10010,
+          "modified": "2026-10-12T23:56:42"
+        },
+        {
+          "name": "Ryu assist_combo.json",
+          "bytes": 348978,
+          "modified": "2026-10-12T23:56:42"
+        },
+        {
+          "name": "Ryu moves_dict.json",
+          "bytes": 9177750,
+          "modified": "2026-10-12T23:56:44"
+        },
+        {
+          "name": "Ryu Names.json",
+          "bytes": 9861,
+          "modified": "2026-10-12T23:56:39"
+        }
+      ],
+      "move_count": 329
+    },
+    {
+      "id": 2,
+      "name": "Luke",
+      "files": [
+        {
+          "name": "Luke HIT_DT.json",
+          "bytes": 11866342,
+          "modified": "2026-10-12T23:56:51"
+        },
+        {
+          "name": "Luke triggers.json",
+          "bytes": 793729,
+          "modified": "2026-10-12T23:56:51"
+        },
+        {
+          "name": "Luke Atemi.json",
+          "bytes": 1143,
+          "modified": "2026-10-12T23:56:51"
+        },
+        {
+          "name": "Luke tgroups.json",
+          "bytes": 13374,
+          "modified": "2026-10-12T23:56:51"
+        },
+        {
+          "name": "Luke rects.json",
+          "bytes": 239976,
+          "modified": "2026-10-12T23:56:51"
+        },
+        {
+          "name": "Luke commands.json",
+          "bytes": 494536,
+          "modified": "2026-10-12T23:56:51"
+        },
+        {
+          "name": "Luke charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:56:51"
+        },
+        {
+          "name": "Luke char_info.json",
+          "bytes": 10048,
+          "modified": "2026-10-12T23:56:51"
+        },
+        {
+          "name": "Luke assist_combo.json",
+          "bytes": 349178,
+          "modified": "2026-10-12T23:56:51"
+        },
+        {
+          "name": "Luke moves_dict.json",
+          "bytes": 9864813,
+          "modified": "2026-10-12T23:56:54"
+        },
+        {
+          "name": "Luke Names.json",
+          "bytes": 9897,
+          "modified": "2026-10-12T23:56:48"
+        }
+      ],
+      "move_count": 326
+    },
+    {
+      "id": 3,
+      "name": "Kimberly",
+      "files": [
+        {
+          "name": "Kimberly HIT_DT.json",
+          "bytes": 16183505,
+          "modified": "2026-10-12T23:57:02"
+        },
+        {
+          "name": "Kimberly triggers.json",
+          "bytes": 1009509,
+          "modified": "2026-10-12T23:57:02"
+        },
+        {
+          "name": "Kimberly Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:57:02"
+        },
+        {
+          "name": "Kimberly tgroups.json",
+          "bytes": 18065,
+          "modified": "2026-10-12T23:57:02"
+        },
+        {
+          "name": "Kimberly rects.json",
+          "bytes": 213146,
+          "modified": "2026-10-12T23:57:02"
+        },
+        {
+          "name": "Kimberly commands.json",
+          "bytes": 507933,
+          "modified": "2026-10-12T23:57:02"
+        },
+        {
+          "name": "Kimberly charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:57:02"
+        },
+        {
+          "name": "Kimberly char_info.json",
+          "bytes": 22022,
+          "modified": "2026-10-12T23:57:02"
+        },
+        {
+          "name": "Kimberly assist_combo.json",
+          "bytes": 348940,
+          "modified": "2026-10-12T23:57:02"
+        },
+        {
+          "name": "Kimberly moves_dict.json",
+          "bytes": 25611954,
+          "modified": "2026-10-12T23:57:08"
+        },
+        {
+          "name": "Kimberly Names.json",
+          "bytes": 12487,
+          "modified": "2026-10-12T23:56:59"
+        }
+      ],
+      "move_count": 692
+    },
+    {
+      "id": 4,
+      "name": "Chun-Li",
+      "files": [
+        {
+          "name": "Chun-Li HIT_DT.json",
+          "bytes": 13268678,
+          "modified": "2026-10-12T23:57:16"
+        },
+        {
+          "name": "Chun-Li triggers.json",
+          "bytes": 1016990,
+          "modified": "2026-10-12T23:57:16"
+        },
+        {
+          "name": "Chun-Li Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:57:16"
+        },
+        {
+          "name": "Chun-Li tgroups.json",
+          "bytes": 16924,
+          "modified": "2026-10-12T23:57:16"
+        },
+        {
+          "name": "Chun-Li rects.json",
+          "bytes": 214866,
+          "modified": "2026-10-12T23:57:16"
+        },
+        {
+          "name": "Chun-Li commands.json",
+          "bytes": 588130,
+          "modified": "2026-10-12T23:57:16"
+        },
+        {
+          "name": "Chun-Li charge.json",
+          "bytes": 1719,
+          "modified": "2026-10-12T23:57:16"
+        },
+        {
+          "name": "Chun-Li char_info.json",
+          "bytes": 13016,
+          "modified": "2026-10-12T23:57:16"
+        },
+        {
+          "name": "Chun-Li assist_combo.json",
+          "bytes": 349086,
+          "modified": "2026-10-12T23:57:16"
+        },
+        {
+          "name": "Chun-Li moves_dict.json",
+          "bytes": 10750794,
+          "modified": "2026-10-12T23:57:19"
+        },
+        {
+          "name": "Chun-Li Names.json",
+          "bytes": 10413,
+          "modified": "2026-10-12T23:57:13"
+        }
+      ],
+      "move_count": 347
+    },
+    {
+      "id": 5,
+      "name": "Manon",
+      "files": [
+        {
+          "name": "Manon HIT_DT.json",
+          "bytes": 13070371,
+          "modified": "2026-10-12T23:57:26"
+        },
+        {
+          "name": "Manon triggers.json",
+          "bytes": 901625,
+          "modified": "2026-10-12T23:57:26"
+        },
+        {
+          "name": "Manon Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:57:26"
+        },
+        {
+          "name": "Manon tgroups.json",
+          "bytes": 21196,
+          "modified": "2026-10-12T23:57:26"
+        },
+        {
+          "name": "Manon rects.json",
+          "bytes": 177682,
+          "modified": "2026-10-12T23:57:26"
+        },
+        {
+          "name": "Manon commands.json",
+          "bytes": 481217,
+          "modified": "2026-10-12T23:57:27"
+        },
+        {
+          "name": "Manon charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:57:27"
+        },
+        {
+          "name": "Manon char_info.json",
+          "bytes": 10008,
+          "modified": "2026-10-12T23:57:27"
+        },
+        {
+          "name": "Manon assist_combo.json",
+          "bytes": 349168,
+          "modified": "2026-10-12T23:57:27"
+        },
+        {
+          "name": "Manon moves_dict.json",
+          "bytes": 18034974,
+          "modified": "2026-10-12T23:57:31"
+        },
+        {
+          "name": "Manon Names.json",
+          "bytes": 10618,
+          "modified": "2026-10-12T23:57:23"
+        }
+      ],
+      "move_count": 366
+    },
+    {
+      "id": 6,
+      "name": "Zangief",
+      "files": [
+        {
+          "name": "Zangief HIT_DT.json",
+          "bytes": 12466290,
+          "modified": "2026-10-12T23:57:38"
+        },
+        {
+          "name": "Zangief triggers.json",
+          "bytes": 707953,
+          "modified": "2026-10-12T23:57:38"
+        },
+        {
+          "name": "Zangief Atemi.json",
+          "bytes": 2277,
+          "modified": "2026-10-12T23:57:38"
+        },
+        {
+          "name": "Zangief tgroups.json",
+          "bytes": 10417,
+          "modified": "2026-10-12T23:57:38"
+        },
+        {
+          "name": "Zangief rects.json",
+          "bytes": 204500,
+          "modified": "2026-10-12T23:57:38"
+        },
+        {
+          "name": "Zangief commands.json",
+          "bytes": 521301,
+          "modified": "2026-10-12T23:57:38"
+        },
+        {
+          "name": "Zangief charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:57:38"
+        },
+        {
+          "name": "Zangief char_info.json",
+          "bytes": 10008,
+          "modified": "2026-10-12T23:57:38"
+        },
+        {
+          "name": "Zangief assist_combo.json",
+          "bytes": 349169,
+          "modified": "2026-10-12T23:57:38"
+        },
+        {
+          "name": "Zangief moves_dict.json",
+          "bytes": 16794374,
+          "modified": "2026-10-12T23:57:42"
+        },
+        {
+          "name": "Zangief Names.json",
+          "bytes": 10753,
+          "modified": "2026-10-12T23:57:35"
+        }
+      ],
+      "move_count": 362
+    },
+    {
+      "id": 7,
+      "name": "JP",
+      "files": [
+        {
+          "name": "JP HIT_DT.json",
+          "bytes": 9553394,
+          "modified": "2026-10-12T23:57:49"
+        },
+        {
+          "name": "JP triggers.json",
+          "bytes": 817498,
+          "modified": "2026-10-12T23:57:49"
+        },
+        {
+          "name": "JP Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:57:49"
+        },
+        {
+          "name": "JP tgroups.json",
+          "bytes": 15786,
+          "modified": "2026-10-12T23:57:49"
+        },
+        {
+          "name": "JP rects.json",
+          "bytes": 229547,
+          "modified": "2026-10-12T23:57:49"
+        },
+        {
+          "name": "JP commands.json",
+          "bytes": 494575,
+          "modified": "2026-10-12T23:57:49"
+        },
+        {
+          "name": "JP charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:57:49"
+        },
+        {
+          "name": "JP char_info.json",
+          "bytes": 12010,
+          "modified": "2026-10-12T23:57:49"
+        },
+        {
+          "name": "JP assist_combo.json",
+          "bytes": 349062,
+          "modified": "2026-10-12T23:57:49"
+        },
+        {
+          "name": "JP moves_dict.json",
+          "bytes": 11649943,
+          "modified": "2026-10-12T23:57:52"
+        },
+        {
+          "name": "JP Names.json",
+          "bytes": 10995,
+          "modified": "2026-10-12T23:57:47"
+        }
+      ],
+      "move_count": 376
+    },
+    {
+      "id": 8,
+      "name": "Dhalsim",
+      "files": [
+        {
+          "name": "Dhalsim HIT_DT.json",
+          "bytes": 10656346,
+          "modified": "2026-10-12T23:57:59"
+        },
+        {
+          "name": "Dhalsim triggers.json",
+          "bytes": 844192,
+          "modified": "2026-10-12T23:57:59"
+        },
+        {
+          "name": "Dhalsim Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:57:59"
+        },
+        {
+          "name": "Dhalsim tgroups.json",
+          "bytes": 21229,
+          "modified": "2026-10-12T23:57:59"
+        },
+        {
+          "name": "Dhalsim rects.json",
+          "bytes": 285923,
+          "modified": "2026-10-12T23:57:59"
+        },
+        {
+          "name": "Dhalsim commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-12T23:58:00"
+        },
+        {
+          "name": "Dhalsim charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:00"
+        },
+        {
+          "name": "Dhalsim char_info.json",
+          "bytes": 13079,
+          "modified": "2026-10-12T23:58:00"
+        },
+        {
+          "name": "Dhalsim assist_combo.json",
+          "bytes": 349153,
+          "modified": "2026-10-12T23:58:00"
+        },
+        {
+          "name": "Dhalsim moves_dict.json",
+          "bytes": 12126938,
+          "modified": "2026-10-12T23:58:02"
+        },
+        {
+          "name": "Dhalsim Names.json",
+          "bytes": 14521,
+          "modified": "2026-10-12T23:57:57"
+        }
+      ],
+      "move_count": 460
+    },
+    {
+      "id": 9,
+      "name": "Cammy",
+      "files": [
+        {
+          "name": "Cammy HIT_DT.json",
+          "bytes": 13678939,
+          "modified": "2026-10-12T23:58:10"
+        },
+        {
+          "name": "Cammy triggers.json",
+          "bytes": 1045512,
+          "modified": "2026-10-12T23:58:10"
+        },
+        {
+          "name": "Cammy Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:10"
+        },
+        {
+          "name": "Cammy tgroups.json",
+          "bytes": 19224,
+          "modified": "2026-10-12T23:58:10"
+        },
+        {
+          "name": "Cammy rects.json",
+          "bytes": 194950,
+          "modified": "2026-10-12T23:58:10"
+        },
+        {
+          "name": "Cammy commands.json",
+          "bytes": 574753,
+          "modified": "2026-10-12T23:58:10"
+        },
+        {
+          "name": "Cammy charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:10"
+        },
+        {
+          "name": "Cammy char_info.json",
+          "bytes": 10751,
+          "modified": "2026-10-12T23:58:10"
+        },
+        {
+          "name": "Cammy assist_combo.json",
+          "bytes": 349093,
+          "modified": "2026-10-12T23:58:10"
+        },
+        {
+          "name": "Cammy moves_dict.json",
+          "bytes": 11235081,
+          "modified": "2026-10-12T23:58:13"
+        },
+        {
+          "name": "Cammy Names.json",
+          "bytes": 11368,
+          "modified": "2026-10-12T23:58:07"
+        }
+      ],
+      "move_count": 358
+    },
+    {
+      "id": 10,
+      "name": "Ken",
+      "files": [
+        {
+          "name": "Ken HIT_DT.json",
+          "bytes": 12671504,
+          "modified": "2026-10-12T23:58:20"
+        },
+        {
+          "name": "Ken triggers.json",
+          "bytes": 932012,
+          "modified": "2026-10-12T23:58:20"
+        },
+        {
+          "name": "Ken Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:20"
+        },
+        {
+          "name": "Ken tgroups.json",
+          "bytes": 16765,
+          "modified": "2026-10-12T23:58:20"
+        },
+        {
+          "name": "Ken rects.json",
+          "bytes": 215799,
+          "modified": "2026-10-12T23:58:20"
+        },
+        {
+          "name": "Ken commands.json",
+          "bytes": 494542,
+          "modified": "2026-10-12T23:58:20"
+        },
+        {
+          "name": "Ken charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:20"
+        },
+        {
+          "name": "Ken char_info.json",
+          "bytes": 10010,
+          "modified": "2026-10-12T23:58:20"
+        },
+        {
+          "name": "Ken assist_combo.json",
+          "bytes": 349028,
+          "modified": "2026-10-12T23:58:20"
+        },
+        {
+          "name": "Ken moves_dict.json",
+          "bytes": 8452772,
+          "modified": "2026-10-12T23:58:22"
+        },
+        {
+          "name": "Ken Names.json",
+          "bytes": 9032,
+          "modified": "2026-10-13T00:02:11"
+        }
+      ],
+      "move_count": 300
+    },
+    {
+      "id": 11,
+      "name": "Dee Jay",
+      "files": [
+        {
+          "name": "Dee Jay HIT_DT.json",
+          "bytes": 15584165,
+          "modified": "2026-10-12T23:58:30"
+        },
+        {
+          "name": "Dee Jay triggers.json",
+          "bytes": 1080314,
+          "modified": "2026-10-12T23:58:31"
+        },
+        {
+          "name": "Dee Jay Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:31"
+        },
+        {
+          "name": "Dee Jay tgroups.json",
+          "bytes": 18984,
+          "modified": "2026-10-12T23:58:31"
+        },
+        {
+          "name": "Dee Jay rects.json",
+          "bytes": 299775,
+          "modified": "2026-10-12T23:58:31"
+        },
+        {
+          "name": "Dee Jay commands.json",
+          "bytes": 548027,
+          "modified": "2026-10-12T23:58:31"
+        },
+        {
+          "name": "Dee Jay charge.json",
+          "bytes": 861,
+          "modified": "2026-10-12T23:58:31"
+        },
+        {
+          "name": "Dee Jay char_info.json",
+          "bytes": 13078,
+          "modified": "2026-10-12T23:58:31"
+        },
+        {
+          "name": "Dee Jay assist_combo.json",
+          "bytes": 348977,
+          "modified": "2026-10-12T23:58:31"
+        },
+        {
+          "name": "Dee Jay moves_dict.json",
+          "bytes": 12502189,
+          "modified": "2026-10-12T23:58:34"
+        },
+        {
+          "name": "Dee Jay Names.json",
+          "bytes": 12072,
+          "modified": "2026-10-12T23:58:27"
+        }
+      ],
+      "move_count": 363
+    },
+    {
+      "id": 12,
+      "name": "Lily",
+      "files": [
+        {
+          "name": "Lily HIT_DT.json",
+          "bytes": 16088800,
+          "modified": "2026-10-12T23:58:42"
+        },
+        {
+          "name": "Lily triggers.json",
+          "bytes": 899327,
+          "modified": "2026-10-12T23:58:42"
+        },
+        {
+          "name": "Lily Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:42"
+        },
+        {
+          "name": "Lily tgroups.json",
+          "bytes": 20241,
+          "modified": "2026-10-12T23:58:42"
+        },
+        {
+          "name": "Lily rects.json",
+          "bytes": 233934,
+          "modified": "2026-10-12T23:58:42"
+        },
+        {
+          "name": "Lily commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-12T23:58:42"
+        },
+        {
+          "name": "Lily charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:42"
+        },
+        {
+          "name": "Lily char_info.json",
+          "bytes": 11456,
+          "modified": "2026-10-12T23:58:42"
+        },
+        {
+          "name": "Lily assist_combo.json",
+          "bytes": 349235,
+          "modified": "2026-10-12T23:58:42"
+        },
+        {
+          "name": "Lily moves_dict.json",
+          "bytes": 12778137,
+          "modified": "2026-10-12T23:58:45"
+        },
+        {
+          "name": "Lily Names.json",
+          "bytes": 11203,
+          "modified": "2026-10-12T23:58:38"
+        }
+      ],
+      "move_count": 349
+    },
+    {
+      "id": 13,
+      "name": "AKI",
+      "files": [
+        {
+          "name": "AKI HIT_DT.json",
+          "bytes": 12865363,
+          "modified": "2026-10-12T23:58:53"
+        },
+        {
+          "name": "AKI triggers.json",
+          "bytes": 643603,
+          "modified": "2026-10-12T23:58:53"
+        },
+        {
+          "name": "AKI Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:53"
+        },
+        {
+          "name": "AKI tgroups.json",
+          "bytes": 13163,
+          "modified": "2026-10-12T23:58:53"
+        },
+        {
+          "name": "AKI rects.json",
+          "bytes": 269452,
+          "modified": "2026-10-12T23:58:53"
+        },
+        {
+          "name": "AKI commands.json",
+          "bytes": 481178,
+          "modified": "2026-10-12T23:58:53"
+        },
+        {
+          "name": "AKI charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:58:53"
+        },
+        {
+          "name": "AKI char_info.json",
+          "bytes": 12287,
+          "modified": "2026-10-12T23:58:53"
+        },
+        {
+          "name": "AKI assist_combo.json",
+          "bytes": 349049,
+          "modified": "2026-10-12T23:58:53"
+        },
+        {
+          "name": "AKI moves_dict.json",
+          "bytes": 10599512,
+          "modified": "2026-10-12T23:58:56"
+        },
+        {
+          "name": "AKI Names.json",
+          "bytes": 11082,
+          "modified": "2026-10-12T23:58:50"
+        }
+      ],
+      "move_count": 351
+    },
+    {
+      "id": 14,
+      "name": "Rashid",
+      "files": [
+        {
+          "name": "Rashid HIT_DT.json",
+          "bytes": 16985929,
+          "modified": "2026-10-12T23:59:04"
+        },
+        {
+          "name": "Rashid triggers.json",
+          "bytes": 879382,
+          "modified": "2026-10-12T23:59:04"
+        },
+        {
+          "name": "Rashid Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:59:04"
+        },
+        {
+          "name": "Rashid tgroups.json",
+          "bytes": 17204,
+          "modified": "2026-10-12T23:59:04"
+        },
+        {
+          "name": "Rashid rects.json",
+          "bytes": 271135,
+          "modified": "2026-10-12T23:59:04"
+        },
+        {
+          "name": "Rashid commands.json",
+          "bytes": 494542,
+          "modified": "2026-10-12T23:59:04"
+        },
+        {
+          "name": "Rashid charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:59:04"
+        },
+        {
+          "name": "Rashid char_info.json",
+          "bytes": 13403,
+          "modified": "2026-10-12T23:59:04"
+        },
+        {
+          "name": "Rashid assist_combo.json",
+          "bytes": 349024,
+          "modified": "2026-10-12T23:59:04"
+        },
+        {
+          "name": "Rashid moves_dict.json",
+          "bytes": 14493160,
+          "modified": "2026-10-12T23:59:08"
+        },
+        {
+          "name": "Rashid Names.json",
+          "bytes": 12690,
+          "modified": "2026-10-12T23:59:00"
+        }
+      ],
+      "move_count": 410
+    },
+    {
+      "id": 15,
+      "name": "Blanka",
+      "files": [
+        {
+          "name": "Blanka HIT_DT.json",
+          "bytes": 16396105,
+          "modified": "2026-10-12T23:59:16"
+        },
+        {
+          "name": "Blanka triggers.json",
+          "bytes": 1060966,
+          "modified": "2026-10-12T23:59:16"
+        },
+        {
+          "name": "Blanka Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:59:16"
+        },
+        {
+          "name": "Blanka tgroups.json",
+          "bytes": 19256,
+          "modified": "2026-10-12T23:59:16"
+        },
+        {
+          "name": "Blanka rects.json",
+          "bytes": 342065,
+          "modified": "2026-10-12T23:59:16"
+        },
+        {
+          "name": "Blanka commands.json",
+          "bytes": 561358,
+          "modified": "2026-10-12T23:59:16"
+        },
+        {
+          "name": "Blanka charge.json",
+          "bytes": 1719,
+          "modified": "2026-10-12T23:59:16"
+        },
+        {
+          "name": "Blanka char_info.json",
+          "bytes": 12333,
+          "modified": "2026-10-12T23:59:16"
+        },
+        {
+          "name": "Blanka assist_combo.json",
+          "bytes": 348921,
+          "modified": "2026-10-12T23:59:16"
+        },
+        {
+          "name": "Blanka moves_dict.json",
+          "bytes": 17972466,
+          "modified": "2026-10-12T23:59:20"
+        },
+        {
+          "name": "Blanka Names.json",
+          "bytes": 15071,
+          "modified": "2026-10-12T23:59:12"
+        }
+      ],
+      "move_count": 536
+    },
+    {
+      "id": 16,
+      "name": "Juri",
+      "files": [
+        {
+          "name": "Juri HIT_DT.json",
+          "bytes": 14674060,
+          "modified": "2026-10-12T23:59:28"
+        },
+        {
+          "name": "Juri triggers.json",
+          "bytes": 1031110,
+          "modified": "2026-10-12T23:59:28"
+        },
+        {
+          "name": "Juri Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:59:28"
+        },
+        {
+          "name": "Juri tgroups.json",
+          "bytes": 23294,
+          "modified": "2026-10-12T23:59:28"
+        },
+        {
+          "name": "Juri rects.json",
+          "bytes": 214886,
+          "modified": "2026-10-12T23:59:28"
+        },
+        {
+          "name": "Juri commands.json",
+          "bytes": 494536,
+          "modified": "2026-10-12T23:59:29"
+        },
+        {
+          "name": "Juri charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:59:29"
+        },
+        {
+          "name": "Juri char_info.json",
+          "bytes": 19451,
+          "modified": "2026-10-12T23:59:29"
+        },
+        {
+          "name": "Juri assist_combo.json",
+          "bytes": 349053,
+          "modified": "2026-10-12T23:59:29"
+        },
+        {
+          "name": "Juri moves_dict.json",
+          "bytes": 12865491,
+          "modified": "2026-10-12T23:59:32"
+        },
+        {
+          "name": "Juri Names.json",
+          "bytes": 10957,
+          "modified": "2026-10-12T23:59:25"
+        }
+      ],
+      "move_count": 394
+    },
+    {
+      "id": 17,
+      "name": "Marisa",
+      "files": [
+        {
+          "name": "Marisa HIT_DT.json",
+          "bytes": 12572889,
+          "modified": "2026-10-12T23:59:39"
+        },
+        {
+          "name": "Marisa triggers.json",
+          "bytes": 848332,
+          "modified": "2026-10-12T23:59:39"
+        },
+        {
+          "name": "Marisa Atemi.json",
+          "bytes": 3413,
+          "modified": "2026-10-12T23:59:39"
+        },
+        {
+          "name": "Marisa tgroups.json",
+          "bytes": 12511,
+          "modified": "2026-10-12T23:59:39"
+        },
+        {
+          "name": "Marisa rects.json",
+          "bytes": 220079,
+          "modified": "2026-10-12T23:59:39"
+        },
+        {
+          "name": "Marisa commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-12T23:59:39"
+        },
+        {
+          "name": "Marisa charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:59:39"
+        },
+        {
+          "name": "Marisa char_info.json",
+          "bytes": 10757,
+          "modified": "2026-10-12T23:59:39"
+        },
+        {
+          "name": "Marisa assist_combo.json",
+          "bytes": 349269,
+          "modified": "2026-10-12T23:59:39"
+        },
+        {
+          "name": "Marisa moves_dict.json",
+          "bytes": 11273945,
+          "modified": "2026-10-12T23:59:42"
+        },
+        {
+          "name": "Marisa Names.json",
+          "bytes": 9716,
+          "modified": "2026-10-12T23:59:36"
+        }
+      ],
+      "move_count": 330
+    },
+    {
+      "id": 18,
+      "name": "Guile",
+      "files": [
+        {
+          "name": "Guile HIT_DT.json",
+          "bytes": 11466566,
+          "modified": "2026-10-12T23:59:49"
+        },
+        {
+          "name": "Guile triggers.json",
+          "bytes": 1089655,
+          "modified": "2026-10-12T23:59:49"
+        },
+        {
+          "name": "Guile Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:59:49"
+        },
+        {
+          "name": "Guile tgroups.json",
+          "bytes": 19304,
+          "modified": "2026-10-12T23:59:49"
+        },
+        {
+          "name": "Guile rects.json",
+          "bytes": 191539,
+          "modified": "2026-10-12T23:59:49"
+        },
+        {
+          "name": "Guile commands.json",
+          "bytes": 668296,
+          "modified": "2026-10-12T23:59:49"
+        },
+        {
+          "name": "Guile charge.json",
+          "bytes": 4724,
+          "modified": "2026-10-12T23:59:49"
+        },
+        {
+          "name": "Guile char_info.json",
+          "bytes": 13899,
+          "modified": "2026-10-12T23:59:49"
+        },
+        {
+          "name": "Guile assist_combo.json",
+          "bytes": 349042,
+          "modified": "2026-10-12T23:59:49"
+        },
+        {
+          "name": "Guile moves_dict.json",
+          "bytes": 11421280,
+          "modified": "2026-10-12T23:59:52"
+        },
+        {
+          "name": "Guile Names.json",
+          "bytes": 11670,
+          "modified": "2026-10-12T23:59:46"
+        }
+      ],
+      "move_count": 373
+    },
+    {
+      "id": 19,
+      "name": "Ed",
+      "files": [
+        {
+          "name": "Ed HIT_DT.json",
+          "bytes": 11159300,
+          "modified": "2026-10-12T23:59:59"
+        },
+        {
+          "name": "Ed triggers.json",
+          "bytes": 868060,
+          "modified": "2026-10-12T23:59:59"
+        },
+        {
+          "name": "Ed Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:59:59"
+        },
+        {
+          "name": "Ed tgroups.json",
+          "bytes": 16962,
+          "modified": "2026-10-12T23:59:59"
+        },
+        {
+          "name": "Ed rects.json",
+          "bytes": 222735,
+          "modified": "2026-10-12T23:59:59"
+        },
+        {
+          "name": "Ed commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-12T23:59:59"
+        },
+        {
+          "name": "Ed charge.json",
+          "bytes": 4,
+          "modified": "2026-10-12T23:59:59"
+        },
+        {
+          "name": "Ed char_info.json",
+          "bytes": 10044,
+          "modified": "2026-10-12T23:59:59"
+        },
+        {
+          "name": "Ed assist_combo.json",
+          "bytes": 349007,
+          "modified": "2026-10-12T23:59:59"
+        },
+        {
+          "name": "Ed moves_dict.json",
+          "bytes": 12023208,
+          "modified": "2026-10-13T00:00:02"
+        },
+        {
+          "name": "Ed Names.json",
+          "bytes": 10835,
+          "modified": "2026-10-12T23:59:56"
+        }
+      ],
+      "move_count": 342
+    },
+    {
+      "id": 20,
+      "name": "E Honda",
+      "files": [
+        {
+          "name": "E Honda HIT_DT.json",
+          "bytes": 15689604,
+          "modified": "2026-10-13T00:00:10"
+        },
+        {
+          "name": "E Honda triggers.json",
+          "bytes": 950878,
+          "modified": "2026-10-13T00:00:10"
+        },
+        {
+          "name": "E Honda Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:00:10"
+        },
+        {
+          "name": "E Honda tgroups.json",
+          "bytes": 14702,
+          "modified": "2026-10-13T00:00:10"
+        },
+        {
+          "name": "E Honda rects.json",
+          "bytes": 272013,
+          "modified": "2026-10-13T00:00:10"
+        },
+        {
+          "name": "E Honda commands.json",
+          "bytes": 574746,
+          "modified": "2026-10-13T00:00:10"
+        },
+        {
+          "name": "E Honda charge.json",
+          "bytes": 1718,
+          "modified": "2026-10-13T00:00:10"
+        },
+        {
+          "name": "E Honda char_info.json",
+          "bytes": 10080,
+          "modified": "2026-10-13T00:00:10"
+        },
+        {
+          "name": "E Honda assist_combo.json",
+          "bytes": 349109,
+          "modified": "2026-10-13T00:00:10"
+        },
+        {
+          "name": "E Honda moves_dict.json",
+          "bytes": 11768571,
+          "modified": "2026-10-13T00:00:13"
+        },
+        {
+          "name": "E Honda Names.json",
+          "bytes": 10159,
+          "modified": "2026-10-13T00:00:06"
+        }
+      ],
+      "move_count": 333
+    },
+    {
+      "id": 21,
+      "name": "Jamie",
+      "files": [
+        {
+          "name": "Jamie HIT_DT.json",
+          "bytes": 17696707,
+          "modified": "2026-10-13T00:00:21"
+        },
+        {
+          "name": "Jamie triggers.json",
+          "bytes": 1367027,
+          "modified": "2026-10-13T00:00:22"
+        },
+        {
+          "name": "Jamie Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:00:22"
+        },
+        {
+          "name": "Jamie tgroups.json",
+          "bytes": 18602,
+          "modified": "2026-10-13T00:00:22"
+        },
+        {
+          "name": "Jamie rects.json",
+          "bytes": 232237,
+          "modified": "2026-10-13T00:00:22"
+        },
+        {
+          "name": "Jamie commands.json",
+          "bytes": 628203,
+          "modified": "2026-10-13T00:00:22"
+        },
+        {
+          "name": "Jamie charge.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:00:22"
+        },
+        {
+          "name": "Jamie char_info.json",
+          "bytes": 62699,
+          "modified": "2026-10-13T00:00:22"
+        },
+        {
+          "name": "Jamie assist_combo.json",
+          "bytes": 349458,
+          "modified": "2026-10-13T00:00:22"
+        },
+        {
+          "name": "Jamie moves_dict.json",
+          "bytes": 14788426,
+          "modified": "2026-10-13T00:00:25"
+        },
+        {
+          "name": "Jamie Names.json",
+          "bytes": 10708,
+          "modified": "2026-10-13T00:00:18"
+        }
+      ],
+      "move_count": 406
+    },
+    {
+      "id": 22,
+      "name": "Akuma",
+      "files": [
+        {
+          "name": "Akuma HIT_DT.json",
+          "bytes": 14782228,
+          "modified": "2026-10-13T00:00:33"
+        },
+        {
+          "name": "Akuma triggers.json",
+          "bytes": 1065365,
+          "modified": "2026-10-13T00:00:33"
+        },
+        {
+          "name": "Akuma Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:00:33"
+        },
+        {
+          "name": "Akuma tgroups.json",
+          "bytes": 17518,
+          "modified": "2026-10-13T00:00:33"
+        },
+        {
+          "name": "Akuma rects.json",
+          "bytes": 239972,
+          "modified": "2026-10-13T00:00:33"
+        },
+        {
+          "name": "Akuma commands.json",
+          "bytes": 521337,
+          "modified": "2026-10-13T00:00:33"
+        },
+        {
+          "name": "Akuma charge.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:00:33"
+        },
+        {
+          "name": "Akuma char_info.json",
+          "bytes": 10008,
+          "modified": "2026-10-13T00:00:33"
+        },
+        {
+          "name": "Akuma assist_combo.json",
+          "bytes": 349024,
+          "modified": "2026-10-13T00:00:34"
+        },
+        {
+          "name": "Akuma moves_dict.json",
+          "bytes": 14686724,
+          "modified": "2026-10-13T00:00:37"
+        },
+        {
+          "name": "Akuma Names.json",
+          "bytes": 12880,
+          "modified": "2026-10-13T00:00:30"
+        }
+      ],
+      "move_count": 415
+    },
+    {
+      "id": 25,
+      "name": "Sagat",
+      "files": [
+        {
+          "name": "Sagat HIT_DT.json",
+          "bytes": 13075205,
+          "modified": "2026-10-13T00:00:44"
+        },
+        {
+          "name": "Sagat triggers.json",
+          "bytes": 795557,
+          "modified": "2026-10-13T00:00:44"
+        },
+        {
+          "name": "Sagat Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:00:44"
+        },
+        {
+          "name": "Sagat tgroups.json",
+          "bytes": 13810,
+          "modified": "2026-10-13T00:00:44"
+        },
+        {
+          "name": "Sagat rects.json",
+          "bytes": 337847,
+          "modified": "2026-10-13T00:00:44"
+        },
+        {
+          "name": "Sagat commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-13T00:00:45"
+        },
+        {
+          "name": "Sagat charge.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:00:45"
+        },
+        {
+          "name": "Sagat char_info.json",
+          "bytes": 10010,
+          "modified": "2026-10-13T00:00:45"
+        },
+        {
+          "name": "Sagat assist_combo.json",
+          "bytes": 349241,
+          "modified": "2026-10-13T00:00:45"
+        },
+        {
+          "name": "Sagat moves_dict.json",
+          "bytes": 10725382,
+          "modified": "2026-10-13T00:00:47"
+        },
+        {
+          "name": "Sagat Names.json",
+          "bytes": 9744,
+          "modified": "2026-10-13T00:00:41"
+        }
+      ],
+      "move_count": 327
+    },
+    {
+      "id": 26,
+      "name": "M Bison",
+      "files": [
+        {
+          "name": "M Bison HIT_DT.json",
+          "bytes": 14985793,
+          "modified": "2026-10-13T00:00:55"
+        },
+        {
+          "name": "M Bison triggers.json",
+          "bytes": 783157,
+          "modified": "2026-10-13T00:00:55"
+        },
+        {
+          "name": "M Bison Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:00:55"
+        },
+        {
+          "name": "M Bison tgroups.json",
+          "bytes": 14208,
+          "modified": "2026-10-13T00:00:55"
+        },
+        {
+          "name": "M Bison rects.json",
+          "bytes": 278046,
+          "modified": "2026-10-13T00:00:55"
+        },
+        {
+          "name": "M Bison commands.json",
+          "bytes": 534624,
+          "modified": "2026-10-13T00:00:55"
+        },
+        {
+          "name": "M Bison charge.json",
+          "bytes": 859,
+          "modified": "2026-10-13T00:00:55"
+        },
+        {
+          "name": "M Bison char_info.json",
+          "bytes": 10047,
+          "modified": "2026-10-13T00:00:55"
+        },
+        {
+          "name": "M Bison assist_combo.json",
+          "bytes": 349064,
+          "modified": "2026-10-13T00:00:55"
+        },
+        {
+          "name": "M Bison moves_dict.json",
+          "bytes": 17813456,
+          "modified": "2026-10-13T00:00:59"
+        },
+        {
+          "name": "M Bison Names.json",
+          "bytes": 16253,
+          "modified": "2026-10-13T00:00:52"
+        }
+      ],
+      "move_count": 469
+    },
+    {
+      "id": 27,
+      "name": "Terry",
+      "files": [
+        {
+          "name": "Terry HIT_DT.json",
+          "bytes": 11263564,
+          "modified": "2026-10-13T00:01:06"
+        },
+        {
+          "name": "Terry triggers.json",
+          "bytes": 787171,
+          "modified": "2026-10-13T00:01:07"
+        },
+        {
+          "name": "Terry Atemi.json",
+          "bytes": 1140,
+          "modified": "2026-10-13T00:01:07"
+        },
+        {
+          "name": "Terry tgroups.json",
+          "bytes": 16674,
+          "modified": "2026-10-13T00:01:07"
+        },
+        {
+          "name": "Terry rects.json",
+          "bytes": 236558,
+          "modified": "2026-10-13T00:01:07"
+        },
+        {
+          "name": "Terry commands.json",
+          "bytes": 494539,
+          "modified": "2026-10-13T00:01:07"
+        },
+        {
+          "name": "Terry charge.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:01:07"
+        },
+        {
+          "name": "Terry char_info.json",
+          "bytes": 14598,
+          "modified": "2026-10-13T00:01:07"
+        },
+        {
+          "name": "Terry assist_combo.json",
+          "bytes": 348930,
+          "modified": "2026-10-13T00:01:07"
+        },
+        {
+          "name": "Terry moves_dict.json",
+          "bytes": 9055479,
+          "modified": "2026-10-13T00:01:09"
+        },
+        {
+          "name": "Terry Names.json",
+          "bytes": 9038,
+          "modified": "2026-10-13T00:01:04"
+        }
+      ],
+      "move_count": 304
+    },
+    {
+      "id": 28,
+      "name": "Mai",
+      "files": [
+        {
+          "name": "Mai HIT_DT.json",
+          "bytes": 17392540,
+          "modified": "2026-10-13T00:01:18"
+        },
+        {
+          "name": "Mai triggers.json",
+          "bytes": 984969,
+          "modified": "2026-10-13T00:01:18"
+        },
+        {
+          "name": "Mai Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:01:18"
+        },
+        {
+          "name": "Mai tgroups.json",
+          "bytes": 24447,
+          "modified": "2026-10-13T00:01:18"
+        },
+        {
+          "name": "Mai rects.json",
+          "bytes": 233042,
+          "modified": "2026-10-13T00:01:18"
+        },
+        {
+          "name": "Mai commands.json",
+          "bytes": 481189,
+          "modified": "2026-10-13T00:01:18"
+        },
+        {
+          "name": "Mai charge.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:01:18"
+        },
+        {
+          "name": "Mai char_info.json",
+          "bytes": 12080,
+          "modified": "2026-10-13T00:01:18"
+        },
+        {
+          "name": "Mai assist_combo.json",
+          "bytes": 349153,
+          "modified": "2026-10-13T00:01:18"
+        },
+        {
+          "name": "Mai moves_dict.json",
+          "bytes": 18135120,
+          "modified": "2026-10-13T00:01:22"
+        },
+        {
+          "name": "Mai Names.json",
+          "bytes": 16867,
+          "modified": "2026-10-13T00:01:14"
+        }
+      ],
+      "move_count": 543
+    },
+    {
+      "id": 29,
+      "name": "Elena",
+      "files": [
+        {
+          "name": "Elena HIT_DT.json",
+          "bytes": 12865242,
+          "modified": "2026-10-13T00:01:30"
+        },
+        {
+          "name": "Elena triggers.json",
+          "bytes": 985299,
+          "modified": "2026-10-13T00:01:30"
+        },
+        {
+          "name": "Elena Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:01:30"
+        },
+        {
+          "name": "Elena tgroups.json",
+          "bytes": 15569,
+          "modified": "2026-10-13T00:01:30"
+        },
+        {
+          "name": "Elena rects.json",
+          "bytes": 204519,
+          "modified": "2026-10-13T00:01:30"
+        },
+        {
+          "name": "Elena commands.json",
+          "bytes": 494531,
+          "modified": "2026-10-13T00:01:30"
+        },
+        {
+          "name": "Elena charge.json",
+          "bytes": 863,
+          "modified": "2026-10-13T00:01:30"
+        },
+        {
+          "name": "Elena char_info.json",
+          "bytes": 11442,
+          "modified": "2026-10-13T00:01:30"
+        },
+        {
+          "name": "Elena assist_combo.json",
+          "bytes": 349306,
+          "modified": "2026-10-13T00:01:30"
+        },
+        {
+          "name": "Elena moves_dict.json",
+          "bytes": 13378888,
+          "modified": "2026-10-13T00:01:33"
+        },
+        {
+          "name": "Elena Names.json",
+          "bytes": 9723,
+          "modified": "2026-10-13T00:01:27"
+        }
+      ],
+      "move_count": 328
+    },
+    {
+      "id": 30,
+      "name": "C Viper",
+      "files": [
+        {
+          "name": "C Viper HIT_DT.json",
+          "bytes": 11067273,
+          "modified": "2026-10-13T00:01:41"
+        },
+        {
+          "name": "C Viper triggers.json",
+          "bytes": 1426274,
+          "modified": "2026-10-13T00:01:41"
+        },
+        {
+          "name": "C Viper Atemi.json",
+          "bytes": 1138,
+          "modified": "2026-10-13T00:01:41"
+        },
+        {
+          "name": "C Viper tgroups.json",
+          "bytes": 16754,
+          "modified": "2026-10-13T00:01:41"
+        },
+        {
+          "name": "C Viper rects.json",
+          "bytes": 191519,
+          "modified": "2026-10-13T00:01:41"
+        },
+        {
+          "name": "C Viper commands.json",
+          "bytes": 668331,
+          "modified": "2026-10-13T00:01:41"
+        },
+        {
+          "name": "C Viper charge.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:01:41"
+        },
+        {
+          "name": "C Viper char_info.json",
+          "bytes": 13655,
+          "modified": "2026-10-13T00:01:41"
+        },
+        {
+          "name": "C Viper assist_combo.json",
+          "bytes": 349053,
+          "modified": "2026-10-13T00:01:41"
+        },
+        {
+          "name": "C Viper moves_dict.json",
+          "bytes": 10300165,
+          "modified": "2026-10-13T00:01:44"
+        },
+        {
+          "name": "C Viper Names.json",
+          "bytes": 10429,
+          "modified": "2026-10-13T00:01:38"
+        }
+      ],
+      "move_count": 351
+    },
+    {
+      "id": 31,
+      "name": "Alex",
+      "files": [
+        {
+          "name": "Alex HIT_DT.json",
+          "bytes": 13770549,
+          "modified": "2026-10-13T00:01:51"
+        },
+        {
+          "name": "Alex triggers.json",
+          "bytes": 921722,
+          "modified": "2026-10-13T00:01:51"
+        },
+        {
+          "name": "Alex Atemi.json",
+          "bytes": 1140,
+          "modified": "2026-10-13T00:01:51"
+        },
+        {
+          "name": "Alex tgroups.json",
+          "bytes": 12955,
+          "modified": "2026-10-13T00:01:51"
+        },
+        {
+          "name": "Alex rects.json",
+          "bytes": 205358,
+          "modified": "2026-10-13T00:01:51"
+        },
+        {
+          "name": "Alex commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-13T00:01:51"
+        },
+        {
+          "name": "Alex charge.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:01:51"
+        },
+        {
+          "name": "Alex char_info.json",
+          "bytes": 13082,
+          "modified": "2026-10-13T00:01:51"
+        },
+        {
+          "name": "Alex assist_combo.json",
+          "bytes": 349000,
+          "modified": "2026-10-13T00:01:51"
+        },
+        {
+          "name": "Alex moves_dict.json",
+          "bytes": 15475824,
+          "modified": "2026-10-13T00:01:55"
+        },
+        {
+          "name": "Alex Names.json",
+          "bytes": 10649,
+          "modified": "2026-10-13T00:01:48"
+        }
+      ],
+      "move_count": 356
+    },
+    {
+      "id": 32,
+      "name": "Ingrid",
+      "files": [
+        {
+          "name": "Ingrid HIT_DT.json",
+          "bytes": 15279555,
+          "modified": "2026-10-13T00:02:03"
+        },
+        {
+          "name": "Ingrid triggers.json",
+          "bytes": 908688,
+          "modified": "2026-10-13T00:02:03"
+        },
+        {
+          "name": "Ingrid Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:02:03"
+        },
+        {
+          "name": "Ingrid tgroups.json",
+          "bytes": 15778,
+          "modified": "2026-10-13T00:02:03"
+        },
+        {
+          "name": "Ingrid rects.json",
+          "bytes": 236517,
+          "modified": "2026-10-13T00:02:03"
+        },
+        {
+          "name": "Ingrid commands.json",
+          "bytes": 521323,
+          "modified": "2026-10-13T00:02:03"
+        },
+        {
+          "name": "Ingrid charge.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:02:03"
+        },
+        {
+          "name": "Ingrid char_info.json",
+          "bytes": 10012,
+          "modified": "2026-10-13T00:02:03"
+        },
+        {
+          "name": "Ingrid assist_combo.json",
+          "bytes": 349352,
+          "modified": "2026-10-13T00:02:04"
+        },
+        {
+          "name": "Ingrid moves_dict.json",
+          "bytes": 16823352,
+          "modified": "2026-10-13T00:02:07"
+        },
+        {
+          "name": "Ingrid Names.json",
+          "bytes": 14731,
+          "modified": "2026-10-13T00:02:00"
+        }
+      ],
+      "move_count": 470
+    },
+    {
+      "id": 33,
+      "name": "Yasmine",
+      "files": [
+        {
+          "name": "Yasmine HIT_DT.json",
+          "bytes": 15080958,
+          "modified": "2026-10-13T00:02:15"
+        },
+        {
+          "name": "Yasmine triggers.json",
+          "bytes": 1070981,
+          "modified": "2026-10-13T00:02:15"
+        },
+        {
+          "name": "Yasmine Atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:02:15"
+        },
+        {
+          "name": "Yasmine tgroups.json",
+          "bytes": 25025,
+          "modified": "2026-10-13T00:02:15"
+        },
+        {
+          "name": "Yasmine rects.json",
+          "bytes": 205383,
+          "modified": "2026-10-13T00:02:15"
+        },
+        {
+          "name": "Yasmine commands.json",
+          "bytes": 481178,
+          "modified": "2026-10-13T00:02:15"
+        },
+        {
+          "name": "Yasmine charge.json",
+          "bytes": 4,
+          "modified": "2026-10-13T00:02:15"
+        },
+        {
+          "name": "Yasmine char_info.json",
+          "bytes": 15035,
+          "modified": "2026-10-13T00:02:15"
+        },
+        {
+          "name": "Yasmine assist_combo.json",
+          "bytes": 349175,
+          "modified": "2026-10-13T00:02:16"
+        },
+        {
+          "name": "Yasmine moves_dict.json",
+          "bytes": 15110951,
+          "modified": "2026-10-13T00:02:19"
+        },
+        {
+          "name": "Yasmine Names.json",
+          "bytes": 12102,
+          "modified": "2026-10-13T00:02:12"
+        }
+      ],
+      "move_count": 402
+    }
+  ],
+  "errors": []
+}

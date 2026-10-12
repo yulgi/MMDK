@@ -472,12 +472,23 @@ local function convert_to_json_tbl(tbl_or_object, max_layers, skip_arrays, skip_
 						if new_tbl[name] == nil then break end
 						if xtype:is_a("via.sfix") then new_tbl[name] = new_tbl[name]:ToFloat() end
 					end
-				elseif td:is_value_type() and obj["ToString()"] and pcall(obj["ToString()"], obj) then
-					return obj:call("ToString()")
 				elseif obj.mValue then
 					return obj.mValue
 				elseif obj.v then
 					return obj.v
+				elseif td:is_value_type() then
+					-- Some SF6 value types throw (or fault) in System.ValueType.ToString.
+					-- Read their fields instead of invoking game code while exporting JSON.
+					for _, field in pairs(td:get_fields()) do
+						local name = field:get_name()
+						if not field:is_static() and name:sub(1, 2) ~= "<>" then
+							local ok, value = pcall(field.get_data, field, obj)
+							if ok then
+								local should_recurse = type(value) == "userdata" and (field:get_type():is_value_type() or sdk.is_managed_object(value))
+								new_tbl[name] = get_non_null_value((should_recurse and recurse(value, layer_no + 1)) or value)
+							end
+						end
+					end
 				elseif td_name:find("Collections") or td_name:find("WrappedArray") then
 					if skip_collections then return end
 					if td_name:find("Dict") then

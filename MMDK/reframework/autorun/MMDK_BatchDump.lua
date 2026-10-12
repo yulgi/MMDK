@@ -22,20 +22,19 @@ local previous_data = nil
 local wait_reason = ""
 local rebuild_requested = false
 local cooldown_frames = 0
-local switch_attempts = 0
-local last_switch_frame = 0
 local starting_p2_id = nil
+local last_switch_details = "No switch requested yet."
+local last_switch_returns = ""
 
 local READY_FRAMES = 20
 local TIMEOUT_FRAMES = 3600
 local NEXT_FIGHTER_DELAY_FRAMES = 120
-local SWITCH_RETRY_FRAMES = 300
-local MAX_SWITCH_ATTEMPTS = 3
 local JOB_KEY = "mmdk_batch_dump_current_character"
+local SCRIPT_VERSION = "2026-10-12.13"
 
 local function message(value)
     last_message = value
-    print("MMDK Batch Dump: " .. value)
+    log.info("MMDK Batch Dump: " .. value)
 end
 
 local function restore_settings()
@@ -123,20 +122,28 @@ local function dump_character(data)
         end
         return true
     end
+    local step = ""
     local ok, err = pcall(function()
-        data:dump_hit_dt_json()
-        data:dump_trigger_json()
-        data:dump_atemi_json()
-        data:dump_tgroups_json()
-        data:dump_rects_json()
-        data:dump_commands_json()
-        data:dump_charge_json()
-        data:dump_char_info_json()
-        data:dump_assist_combo_json()
-        data:dump_moves_dict_json()
+        local methods = {
+            {"HIT_DT", "dump_hit_dt_json"},
+            {"triggers", "dump_trigger_json"},
+            {"atemi", "dump_atemi_json"},
+            {"tgroups", "dump_tgroups_json"},
+            {"rects", "dump_rects_json"},
+            {"commands", "dump_commands_json"},
+            {"charge", "dump_charge_json"},
+            {"char_info", "dump_char_info_json"},
+            {"assist_combo", "dump_assist_combo_json"},
+            {"moves_dict", "dump_moves_dict_json"},
+        }
+        for _, method in ipairs(methods) do
+            step = method[1]
+            log.info("MMDK Batch Dump: Exporting " .. data.name .. " " .. step)
+            data[method[2]](data)
+        end
     end)
     json.dump_file = original_dump_file
-    if not ok then error(err) end
+    if not ok then error(step .. ": " .. tostring(err)) end
 end
 
 local function rebuild_p2_data(id)
@@ -149,14 +156,38 @@ local function rebuild_p2_data(id)
     message("Rebuilding " .. characters[id] .. " data (" .. index .. "/" .. #queue .. ").")
 end
 
+-- The training controller owns both the fighter selection and the resource
+-- reload flags. Editing FighterDesc or SelectMenu.FighterID alone bypasses it.
 local function switch_p2(id)
-    local manager, descs = training_objects()
+    local manager = training_objects()
     if not manager then error("Training Mode is no longer available") end
-    descs[1].FighterId = id
-    manager:SetFighter(descs[0], descs[1])
-    manager:RequestTrainingFlow(false)
-    switch_attempts = switch_attempts + 1
-    last_switch_frame = frames_waited
+    if manager:get_field("_ActiveMenuType") ~= -1 then
+        error("Close the game training menu before switching fighters")
+    end
+    local funcs = manager:get_field("_tfFuncs")
+    if not funcs then error("Training function controllers are unavailable") end
+    local selector = require("MMDK\\functions").lua_get_dict(funcs)[1]
+    if not selector or selector:get_type_definition():get_full_name() ~= "app.training.tf_SelectMenu" then
+        error("Training character-selection controller is unavailable")
+    end
+    local selection = manager:get_field("_tData"):get_field("SelectMenu"):get_field("PlayerDatas")[1]
+    local controller = selector:get_field("FuncList")
+    if not controller or not selection then error("Training P2 selection is unavailable") end
+    local live_before = current_p2_id()
+    -- Zero-based player 1 is P2. Preserve controls, reset costume/color to the
+    -- target's default, and let ChangeFighter mark IsCharaChange/IsChanged.
+    controller:call("ChangeFighter", 1, id, 0, 0,
+        selection:get_field("InputType"), selection:get_field("KeyConfigPreset"),
+        selection:get_field("NegativeEdge"), selection:get_field("LowStickSensitivity"))
+    local game_data = selector:get_field("_GameData")
+    local marked = game_data and game_data:get_field("IsCharaChange")
+    if not marked then error("ChangeFighter did not request a character reload") end
+    -- Apply only selection; other controllers still reference the old fighter
+    -- until the new battle loads (global Apply can index incompatible gauges).
+    selector:call("Apply")
+    last_switch_details = "target=" .. id .. ", live=" .. tostring(live_before) .. "; waiting for fighter resources"
+    last_switch_returns = "ChangeFighter(P2) marked reload=" .. tostring(marked) .. "; tf_SelectMenu.Apply() completed"
+    log.info("MMDK Batch Dump: " .. last_switch_details .. "; " .. last_switch_returns)
 end
 
 local function start(resume)
@@ -169,10 +200,16 @@ local function start(resume)
         stop_with_error("Enter Training Mode before starting.")
         return
     end
+    if manager:get_field("_ActiveMenuType") ~= -1 then
+        stop_with_error("Close the game training menu before starting or resuming.")
+        return
+    end
     if not resume then
         local selected, err = parse_ids(ids_text)
         if not selected then stop_with_error(err); return end
         queue, index, completed = selected, 1, {}
+        last_switch_details = "No switch requested yet."
+        last_switch_returns = ""
     end
     local names = {["All Characters"] = true}
     for _, id in ipairs(queue) do names[characters[id]] = true end
@@ -208,7 +245,6 @@ local function request_character(id)
     stable_frames = 0
     wait_reason = ""
     rebuild_requested = false
-    switch_attempts = 0
     starting_p2_id = current_p2_id()
     if starting_p2_id == id then
         -- TrainingManager may not rebuild the battle when P2 already has this ID.
@@ -232,7 +268,8 @@ local function request_character(id)
     message("Loading " .. characters[id] .. " (" .. index .. "/" .. #queue .. ").")
 end
 
-re.on_frame(function()
+-- Menu operations must run on the game update thread, never on the render callback.
+re.on_application_entry("UpdateBehavior", function()
     if phase == "cooldown" then
         cooldown_frames = cooldown_frames - 1
         if cooldown_frames <= 0 then phase = "request" end
@@ -263,18 +300,6 @@ re.on_frame(function()
         wait_reason = reason
         stable_frames = 0
         local observed_id = current_p2_id()
-        if observed_id == starting_p2_id and observed_id ~= id and switch_attempts > 0 and frames_waited - last_switch_frame >= SWITCH_RETRY_FRAMES then
-            if switch_attempts >= MAX_SWITCH_ATTEMPTS then
-                stop_with_error("Cannot switch to " .. characters[id] .. " after " .. switch_attempts .. " requests; P2 ID is still " .. tostring(observed_id) .. ".")
-                return
-            end
-            local ok, err = pcall(switch_p2, id)
-            if not ok then
-                stop_with_error("Cannot retry " .. characters[id] .. ": " .. tostring(err))
-                return
-            end
-            message("Retrying switch to " .. characters[id] .. " (" .. switch_attempts .. "/" .. MAX_SWITCH_ATTEMPTS .. ").")
-        end
         if not rebuild_requested and frames_waited >= 120 and observed_id == id then
             if engines and engines[2] then
                 rebuild_p2_data(id)
@@ -315,6 +340,7 @@ end)
 
 re.on_draw_ui(function()
     if not imgui.tree_node("MMDK Batch Dump") then return end
+    imgui.text("Script version: " .. SCRIPT_VERSION)
     imgui.text("Training Mode: cycles P2 through the selected character IDs.")
     local changed, value = imgui.input_text("Character IDs", ids_text)
     if changed and (phase == "idle" or phase == "done" or phase == "error" or phase == "stopped") then ids_text = value end
@@ -332,6 +358,9 @@ re.on_draw_ui(function()
         end
     end
     imgui.text("Status: " .. last_message)
+    imgui.text("Phase: " .. phase)
+    imgui.text("Switch: " .. last_switch_details)
+    if last_switch_returns ~= "" then imgui.text("Calls: " .. last_switch_returns) end
     if phase == "waiting" then
         imgui.text("Waiting: " .. frames_waited .. "/" .. TIMEOUT_FRAMES .. " frames; " .. (wait_reason ~= "" and wait_reason or "checking stability"))
     elseif phase == "cooldown" then
