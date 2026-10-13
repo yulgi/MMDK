@@ -26,16 +26,16 @@ local characters = {
 	[20] = "E Honda", 
 	[21] = "Jamie", 
 	[22] = "Akuma", 
-	-- IDs 23 and 24 are not playable fighters in the current roster.
-	[25] = "Sagat",
-	[26] = "M Bison", 
-	[27] = "Terry", 
-	[28] = "Mai",
-	[29] = "Elena",
-	[30] = "C Viper",
-	[31] = "Alex",
-	[32] = "Ingrid",
-	[33] = "Yasmine",
+	[23] = "M Bison", 
+	[24] = "Terry", 
+	[25] = "Mai",
+	[26] = "Elena",
+    [27] = "Sagat",
+	[28] = "C Viper",
+	[29] = "Alex",
+	[30] = "Ingrid",
+	[31] = "Yasmine",
+    [32] = "Arjun"
 }
 
 --Table of indexes into the param of a HIT_DT_TBL, labelled by their purpose
