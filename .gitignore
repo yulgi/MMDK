@@ -2,3 +2,9 @@
 *.bak
 *.rar
 *.DS_Store
+
+# Local backups, runtime logs and intermediate diagnostics.
+/tools/validation-20261014/deployment/*.original
+/tools/validation-20261014/*.log
+/tools/validation-20261014/names_cache_failure.json
+/tools/validation-20261014/common_merge_live.json

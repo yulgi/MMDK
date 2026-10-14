@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Street Fighter 6\\reframework\\autorun\\MMDK.lua",
+      "backup": "C:\\Users\\13429\\Desktop\\sf6-ai-coach\\MMDK\\tools\\validation-20261014\\deployment\\MMDK.lua.original",
+      "before_sha256": "990c6fe874d3c5ddadbdc47e5d169ecd6ebe72735dbe35af51e6b4c74b65482b",
+      "after_sha256": "4b3d3e2d6bafe844a8976c70ba01003966a10a066707616d1b745814887c30b6"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Street Fighter 6\\reframework\\autorun\\MMDK_BatchDump.lua",
+      "backup": "C:\\Users\\13429\\Desktop\\sf6-ai-coach\\MMDK\\tools\\validation-20261014\\deployment\\MMDK_BatchDump.lua.original",
+      "before_sha256": "1cc5b7a4804199c30af45348711ec639648f59341191021400371bac3a307786",
+      "after_sha256": "32c2b3d1930b29e4f5a320affd04156d7e1eeb7082179659a8aae4766d4b215b"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Street Fighter 6\\reframework\\autorun\\MMDK\\tables.lua",
+      "backup": "C:\\Users\\13429\\Desktop\\sf6-ai-coach\\MMDK\\tools\\validation-20261014\\deployment\\tables.lua.original",
+      "before_sha256": "5fe8996518552d274bc90c964e6ae43f88950c6d229a0d6c9b49c1906373f905",
+      "after_sha256": "f0ef7f77472a5e035f4cc742fe3728153457cf4d03ced393a7ce078e80c8c17f"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Street Fighter 6\\reframework\\autorun\\MMDK\\functions.lua",
+      "backup": "C:\\Users\\13429\\Desktop\\sf6-ai-coach\\MMDK\\tools\\validation-20261014\\deployment\\functions.lua.original",
+      "before_sha256": "45e6b214ce2c4d8962e0255f9b2fa88b0bf1d87365bd56ae3ef89f87b0503572",
+      "after_sha256": "1329d470634efae4da6cf9c4968ceb9b0f32af05c9373b186202d3f4c6e64327"
+    }
+  ],
+  "common_default_enabled": true,
+  "batch_version": "2026-10-14.2"
+}

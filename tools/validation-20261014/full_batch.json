@@ -1,0 +1,2611 @@
+{
+  "ok": true,
+  "since": "2026-10-14T10:49:54",
+  "fighter_count": 32,
+  "fighter_file_count": 352,
+  "common_file_count": 6,
+  "file_count": 358,
+  "fighters": [
+    {
+      "id": 1,
+      "name": "Ryu",
+      "files": [
+        {
+          "name": "Ryu HIT_DT.json",
+          "bytes": 11466115,
+          "modified": "2026-10-14T10:50:01",
+          "sha256": "7fe649c71b1b680605c17a5107ee70e8ffae77f269e4570416d91248689a2b60"
+        },
+        {
+          "name": "Ryu triggers.json",
+          "bytes": 902842,
+          "modified": "2026-10-14T10:50:01",
+          "sha256": "2952fc81deb99f5e1cbefcb5555f5ac52de9acc623a1413052494ae4a3e66865"
+        },
+        {
+          "name": "Ryu atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:50:01",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Ryu tgroups.json",
+          "bytes": 17269,
+          "modified": "2026-10-14T10:50:01",
+          "sha256": "e3567a5ef1db06ffb167c0408497eaf354fc63bb116daaf4907282f7ec8af58d"
+        },
+        {
+          "name": "Ryu rects.json",
+          "bytes": 242598,
+          "modified": "2026-10-14T10:50:01",
+          "sha256": "8778db45f538eb4d27ed904583f5cc3fa1a1c92c38c3255c7b56e2446d295b80"
+        },
+        {
+          "name": "Ryu commands.json",
+          "bytes": 521292,
+          "modified": "2026-10-14T10:50:01",
+          "sha256": "2b0489f7883bff19e9325b1e4017c696388a8af0ffec5b28663b19cf8839d3b7"
+        },
+        {
+          "name": "Ryu charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:50:01",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Ryu char_info.json",
+          "bytes": 10010,
+          "modified": "2026-10-14T10:50:01",
+          "sha256": "0947ae9c80b7f3468d18dfec79bde8e4513155150cddba765b0e9005048573fb"
+        },
+        {
+          "name": "Ryu assist_combo.json",
+          "bytes": 348978,
+          "modified": "2026-10-14T10:50:01",
+          "sha256": "b991ac8f5e622587af1c43b56e02014115586c1075dc883fd55f4a9e10a0dbf8"
+        },
+        {
+          "name": "Ryu moves_dict.json",
+          "bytes": 10420815,
+          "modified": "2026-10-14T10:50:04",
+          "sha256": "8598bdd3e2b4d6c3507521ab7632c3181c15530542b3b94b2f8e2d9f73b3d351"
+        },
+        {
+          "name": "Ryu Names.json",
+          "bytes": 15368,
+          "modified": "2026-10-14T10:55:49",
+          "sha256": "f1b57453ab294bb34833e6e91f747dfcbafada8607606e210710b6ac03148c15"
+        }
+      ],
+      "move_count": 529,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "1": 296
+      }
+    },
+    {
+      "id": 2,
+      "name": "Luke",
+      "files": [
+        {
+          "name": "Luke HIT_DT.json",
+          "bytes": 11866342,
+          "modified": "2026-10-14T10:50:11",
+          "sha256": "8a9dfbb8aa85eafaf02c1b61b399d9b7e2c21bb51ad2fbb8abfd89c2ef2a7a8c"
+        },
+        {
+          "name": "Luke triggers.json",
+          "bytes": 796633,
+          "modified": "2026-10-14T10:50:11",
+          "sha256": "ece35e871b6393a6f03bdeb01d5301861b2a86fa0e33067f081a4b3462b1a27a"
+        },
+        {
+          "name": "Luke atemi.json",
+          "bytes": 1143,
+          "modified": "2026-10-14T10:50:11",
+          "sha256": "3e215da819efb13e5e50333589bbdd5165ee78154cb76df04317044060591e75"
+        },
+        {
+          "name": "Luke tgroups.json",
+          "bytes": 13374,
+          "modified": "2026-10-14T10:50:11",
+          "sha256": "3c02c7c45a106b5d27573be8ecb76ca5a1bc7109777ed9bc4169c702392a352e"
+        },
+        {
+          "name": "Luke rects.json",
+          "bytes": 239976,
+          "modified": "2026-10-14T10:50:11",
+          "sha256": "f0128e1209b04bbf84f57bda898e9afaf032bb90c8b6c902459049e81b922022"
+        },
+        {
+          "name": "Luke commands.json",
+          "bytes": 494536,
+          "modified": "2026-10-14T10:50:11",
+          "sha256": "6960c6634849455863f3648cae6cae440dfd0a9621582cd3f7bccecb031d2dfb"
+        },
+        {
+          "name": "Luke charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:50:11",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Luke char_info.json",
+          "bytes": 10048,
+          "modified": "2026-10-14T10:50:11",
+          "sha256": "5eccc310f88476042ec1380c8aec0020da3159f575f75bcf8d521f2698fd86fe"
+        },
+        {
+          "name": "Luke assist_combo.json",
+          "bytes": 349178,
+          "modified": "2026-10-14T10:50:11",
+          "sha256": "8b8c6b68d7c1b85fe3f9fcc5c5cb19a0fdeb7c96ba048dd5549292f2421a5f65"
+        },
+        {
+          "name": "Luke moves_dict.json",
+          "bytes": 11109967,
+          "modified": "2026-10-14T10:50:14",
+          "sha256": "ffa8c9f7f957ab58ee0cd5b426faf67240ba37af81ecfb63a333813e4a76a0c1"
+        },
+        {
+          "name": "Luke Names.json",
+          "bytes": 15435,
+          "modified": "2026-10-14T10:50:08",
+          "sha256": "1ee13d80c616a131a1520a3d9b5cbac3808fb340e5bab605b0963dadf06c8960"
+        }
+      ],
+      "move_count": 527,
+      "null_resources": [
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "2": 306
+      }
+    },
+    {
+      "id": 3,
+      "name": "Kimberly",
+      "files": [
+        {
+          "name": "Kimberly HIT_DT.json",
+          "bytes": 16183505,
+          "modified": "2026-10-14T10:50:22",
+          "sha256": "a12217c5b529e0fa91b4a3fdc7556e356fb861c70d2316d0537dd26f6f73aae7"
+        },
+        {
+          "name": "Kimberly triggers.json",
+          "bytes": 1013407,
+          "modified": "2026-10-14T10:50:22",
+          "sha256": "a3ca331773e5bed3aa73f2956749200c1e1e75749428c26a52495e13665fcbe9"
+        },
+        {
+          "name": "Kimberly atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:50:22",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Kimberly tgroups.json",
+          "bytes": 18065,
+          "modified": "2026-10-14T10:50:22",
+          "sha256": "fa51a59ec187ff7237c29221c52c8d1fe55b74c52de6c13d16ce8f88cb15f5e3"
+        },
+        {
+          "name": "Kimberly rects.json",
+          "bytes": 213146,
+          "modified": "2026-10-14T10:50:22",
+          "sha256": "8be029138287b760914cddf26df9a124e0b7b09e824b0462e2519f7c553db64a"
+        },
+        {
+          "name": "Kimberly commands.json",
+          "bytes": 507933,
+          "modified": "2026-10-14T10:50:22",
+          "sha256": "48d4c21fbd1db5058f5ff99773b822bc7b3532b2c38bc615b8a5d513c0f68ac9"
+        },
+        {
+          "name": "Kimberly charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:50:22",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Kimberly char_info.json",
+          "bytes": 22022,
+          "modified": "2026-10-14T10:50:22",
+          "sha256": "939853358a4e05bfc9644f4adbc2c1f10ee36002cd50d9f8c44af41944e5923b"
+        },
+        {
+          "name": "Kimberly assist_combo.json",
+          "bytes": 348940,
+          "modified": "2026-10-14T10:50:23",
+          "sha256": "3573242ad84934d6b795041c0df7df57c48e6998aeda31f655fe733e2abc0a46"
+        },
+        {
+          "name": "Kimberly moves_dict.json",
+          "bytes": 26793758,
+          "modified": "2026-10-14T10:50:28",
+          "sha256": "980a60400bf0a368bd64654f536d0f6536031bbcaeae1e1009bd9b36db9d2f84"
+        },
+        {
+          "name": "Kimberly Names.json",
+          "bytes": 17810,
+          "modified": "2026-10-14T10:50:19",
+          "sha256": "6a8b5ec5bf88833546f1427f7f62d20e92b2a17248a21889950aa327522b66cf"
+        }
+      ],
+      "move_count": 884,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "3": 655
+      }
+    },
+    {
+      "id": 4,
+      "name": "Chun-Li",
+      "files": [
+        {
+          "name": "Chun-Li HIT_DT.json",
+          "bytes": 13268678,
+          "modified": "2026-10-14T10:50:36",
+          "sha256": "339a4a19554745b341bb88e0268d55733f5d88d61dcec4cd06ec32f65a564ee1"
+        },
+        {
+          "name": "Chun-Li triggers.json",
+          "bytes": 1026985,
+          "modified": "2026-10-14T10:50:36",
+          "sha256": "fe94d43da477794f526a7f1d461ca9140672c796998b88897ed3b4932ae10447"
+        },
+        {
+          "name": "Chun-Li atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:50:36",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Chun-Li tgroups.json",
+          "bytes": 16961,
+          "modified": "2026-10-14T10:50:36",
+          "sha256": "f6593224fd7f6279037f75a840d4679e8ea15fce489778201bf9a39c110e15a4"
+        },
+        {
+          "name": "Chun-Li rects.json",
+          "bytes": 214866,
+          "modified": "2026-10-14T10:50:36",
+          "sha256": "7409c0c5dfa26d5b925ca0396ca59a1fe5a254c7a3d754a99009a129d7cd59aa"
+        },
+        {
+          "name": "Chun-Li commands.json",
+          "bytes": 588130,
+          "modified": "2026-10-14T10:50:36",
+          "sha256": "fd0aa6b80e005be5e66d30253271e324bbde581a300e1db76d456597fa46c5cd"
+        },
+        {
+          "name": "Chun-Li charge.json",
+          "bytes": 1719,
+          "modified": "2026-10-14T10:50:36",
+          "sha256": "215492de0332d6632b464d3790a8d527257ea1e36841fa391850bbbc49ffd7bd"
+        },
+        {
+          "name": "Chun-Li char_info.json",
+          "bytes": 13016,
+          "modified": "2026-10-14T10:50:36",
+          "sha256": "b6dce4a1ba5ec3ab1d853c2abbcee2d34633c0d529cdfbcf03f429862025fef9"
+        },
+        {
+          "name": "Chun-Li assist_combo.json",
+          "bytes": 349086,
+          "modified": "2026-10-14T10:50:36",
+          "sha256": "02e3422888c00ef004ddf993931a0fd3431c59b3272390c897e3dbd775ae7d15"
+        },
+        {
+          "name": "Chun-Li moves_dict.json",
+          "bytes": 11917792,
+          "modified": "2026-10-14T10:50:39",
+          "sha256": "c28681fb0a1184db46e0fb7fd0e72fbd1bad605d38f5b8bc13e408c435d3754b"
+        },
+        {
+          "name": "Chun-Li Names.json",
+          "bytes": 15756,
+          "modified": "2026-10-14T10:50:33",
+          "sha256": "6d394c671261389b2f151e4ba213be784e0e872a116d442363ba2f13d30e178f"
+        }
+      ],
+      "move_count": 541,
+      "null_resources": [
+        "atemi"
+      ],
+      "motion_resource_id_counts": {
+        "4": 324
+      }
+    },
+    {
+      "id": 5,
+      "name": "Manon",
+      "files": [
+        {
+          "name": "Manon HIT_DT.json",
+          "bytes": 13070371,
+          "modified": "2026-10-14T10:50:46",
+          "sha256": "f8f06e26f79f4d5c59bb45035153bc709790e8547402bd122fd5df16995937b1"
+        },
+        {
+          "name": "Manon triggers.json",
+          "bytes": 905156,
+          "modified": "2026-10-14T10:50:47",
+          "sha256": "9bac9a19981ef1e381c3849315e3d2b71132585c2811b522f456060f4d2cb2ab"
+        },
+        {
+          "name": "Manon atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:50:47",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Manon tgroups.json",
+          "bytes": 21196,
+          "modified": "2026-10-14T10:50:47",
+          "sha256": "d7d499d6bd04a4fcca3ecc79dae240ed26c8e28bcbf85c01a69b585f47cf8859"
+        },
+        {
+          "name": "Manon rects.json",
+          "bytes": 177682,
+          "modified": "2026-10-14T10:50:47",
+          "sha256": "0e1b38c1ba3911d43230be702bef1d72665a2ba2f39cab774f19e5e28efac5ae"
+        },
+        {
+          "name": "Manon commands.json",
+          "bytes": 481217,
+          "modified": "2026-10-14T10:50:47",
+          "sha256": "565f3b1c6a23c1dd18f51c04345093aeedaf6a17e869405ee0cfeaae6d0740bf"
+        },
+        {
+          "name": "Manon charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:50:47",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Manon char_info.json",
+          "bytes": 10008,
+          "modified": "2026-10-14T10:50:47",
+          "sha256": "8241432b120a6c55c6039921a814884f15bd16d6fd8f168e294438d224ba454e"
+        },
+        {
+          "name": "Manon assist_combo.json",
+          "bytes": 349168,
+          "modified": "2026-10-14T10:50:47",
+          "sha256": "c77e9008b554df48a26ae901705cae979e7c2943c0b08073548aed7474b90e9a"
+        },
+        {
+          "name": "Manon moves_dict.json",
+          "bytes": 19278111,
+          "modified": "2026-10-14T10:50:51",
+          "sha256": "8ea96bd0c6469b31ab62446ef754501f59ffa55453e07c9860103ed7e2db5680"
+        },
+        {
+          "name": "Manon Names.json",
+          "bytes": 16125,
+          "modified": "2026-10-14T10:50:44",
+          "sha256": "8975d439b1306e081540c40682d767d77c7e2c9d92506fc121f2b113153034c9"
+        }
+      ],
+      "move_count": 566,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "5": 362
+      }
+    },
+    {
+      "id": 6,
+      "name": "Zangief",
+      "files": [
+        {
+          "name": "Zangief HIT_DT.json",
+          "bytes": 12466290,
+          "modified": "2026-10-14T10:50:58",
+          "sha256": "54e20d9b50b09cbcf340696fc6f0d056ea500530a1fc53cc8430f98d4103e266"
+        },
+        {
+          "name": "Zangief triggers.json",
+          "bytes": 710428,
+          "modified": "2026-10-14T10:50:59",
+          "sha256": "248a0995615608c982f891bb9c8d82a67944e403d6f18e206585dee1a05f0261"
+        },
+        {
+          "name": "Zangief atemi.json",
+          "bytes": 2277,
+          "modified": "2026-10-14T10:50:59",
+          "sha256": "6323852d393b478794545eabaa8602db4b6ccb53f7df472dedb677211e7e8341"
+        },
+        {
+          "name": "Zangief tgroups.json",
+          "bytes": 10417,
+          "modified": "2026-10-14T10:50:59",
+          "sha256": "5455936885b7674bbd56e54b088b6cd08d49f765aacc99ec9e39b4a8d4057d7b"
+        },
+        {
+          "name": "Zangief rects.json",
+          "bytes": 204500,
+          "modified": "2026-10-14T10:50:59",
+          "sha256": "498b94b699d8ae4e03930ce25826671025fa1f849321f5034df6f57e80e195af"
+        },
+        {
+          "name": "Zangief commands.json",
+          "bytes": 521301,
+          "modified": "2026-10-14T10:50:59",
+          "sha256": "06041b59c768b574e5bab7c99ca8804830b81ec603d949b74678b99541effe9f"
+        },
+        {
+          "name": "Zangief charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:50:59",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Zangief char_info.json",
+          "bytes": 10008,
+          "modified": "2026-10-14T10:50:59",
+          "sha256": "963a6b070b950a7c42229a8cc7cac474af3fbf2be2c366e8320fab108cfd7051"
+        },
+        {
+          "name": "Zangief assist_combo.json",
+          "bytes": 349169,
+          "modified": "2026-10-14T10:50:59",
+          "sha256": "2b788cbf1e01a12ac1db9d636caa4c94717d8121a326849eeaaa372459361d2b"
+        },
+        {
+          "name": "Zangief moves_dict.json",
+          "bytes": 18012415,
+          "modified": "2026-10-14T10:51:03",
+          "sha256": "b28b5f940bf5a95ce5957fb91b3bd00cb455e18cd380f10a1735703fe36c33fb"
+        },
+        {
+          "name": "Zangief Names.json",
+          "bytes": 16188,
+          "modified": "2026-10-14T10:50:56",
+          "sha256": "afceae274a30b388993fc0302cce36f0353d2a18dbda874bd2a9611317de4e43"
+        }
+      ],
+      "move_count": 559,
+      "null_resources": [
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "6": 358
+      }
+    },
+    {
+      "id": 7,
+      "name": "JP",
+      "files": [
+        {
+          "name": "JP HIT_DT.json",
+          "bytes": 9553394,
+          "modified": "2026-10-14T10:51:09",
+          "sha256": "084659ef4a1126710b478716b3a8b16feddb8e736c9a70519c64de0be82de3a4"
+        },
+        {
+          "name": "JP triggers.json",
+          "bytes": 820699,
+          "modified": "2026-10-14T10:51:10",
+          "sha256": "750922d75c24c9f80b3d98cc61d61ae426832e2a5b7609e8fa5f0c219e607776"
+        },
+        {
+          "name": "JP atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:51:10",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "JP tgroups.json",
+          "bytes": 15786,
+          "modified": "2026-10-14T10:51:10",
+          "sha256": "73112052f74b5354b570f295a031c2ef29bfa7a6b96cdabb4c2f8bebb42c913b"
+        },
+        {
+          "name": "JP rects.json",
+          "bytes": 229547,
+          "modified": "2026-10-14T10:51:10",
+          "sha256": "c5f097462d6c006fad9b35d3fafa120eea72d07f976cd79b806c7f439be76d20"
+        },
+        {
+          "name": "JP commands.json",
+          "bytes": 494575,
+          "modified": "2026-10-14T10:51:10",
+          "sha256": "5e6b34bc79e29ef241bc3031ec03a84ea58bb7a5b30b944ada8a6b88b76bdd94"
+        },
+        {
+          "name": "JP charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:51:10",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "JP char_info.json",
+          "bytes": 12010,
+          "modified": "2026-10-14T10:51:10",
+          "sha256": "c2f8add8271bdc597cbead13483fcbbe959a9bf6a3e86a1f6db3fb5f1234b986"
+        },
+        {
+          "name": "JP assist_combo.json",
+          "bytes": 349062,
+          "modified": "2026-10-14T10:51:10",
+          "sha256": "52622a2277fc6eb306e002d7588944fbf35927d15eb71fd68547ba4ab6a81922"
+        },
+        {
+          "name": "JP moves_dict.json",
+          "bytes": 12895149,
+          "modified": "2026-10-14T10:51:13",
+          "sha256": "07c1fd0fbc43e59e26e58849483c83bb57c77b42fc16dff11fa98c21dd40428f"
+        },
+        {
+          "name": "JP Names.json",
+          "bytes": 16523,
+          "modified": "2026-10-14T10:51:07",
+          "sha256": "bdae3d0fb17ef25f4dbd194041db2ab03ac286687c8327787588e3e2777b4d33"
+        }
+      ],
+      "move_count": 577,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "7": 301
+      }
+    },
+    {
+      "id": 8,
+      "name": "Dhalsim",
+      "files": [
+        {
+          "name": "Dhalsim HIT_DT.json",
+          "bytes": 10656346,
+          "modified": "2026-10-14T10:51:20",
+          "sha256": "f98cb34b491ba0f7a879529f60ab367e295d9a98c5c5ce335ca3f11ba020338d"
+        },
+        {
+          "name": "Dhalsim triggers.json",
+          "bytes": 847525,
+          "modified": "2026-10-14T10:51:20",
+          "sha256": "6b801c74f70943a54c947225bd8a108bfccaecb368f0c73a15f9f91dbad6c8e9"
+        },
+        {
+          "name": "Dhalsim atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:51:20",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Dhalsim tgroups.json",
+          "bytes": 21229,
+          "modified": "2026-10-14T10:51:20",
+          "sha256": "5a29734d983045fd3b00eec2f342b33bd2127ed856e338623ed39da930264fcf"
+        },
+        {
+          "name": "Dhalsim rects.json",
+          "bytes": 285923,
+          "modified": "2026-10-14T10:51:20",
+          "sha256": "d4cf0c237dd14aaa7257d5ad8dac49b71f65f68915613f2d0814df0912c5c5fe"
+        },
+        {
+          "name": "Dhalsim commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-14T10:51:20",
+          "sha256": "48ae451507bd11c8debb029cec4ba9196dea587173753dbfed803e289ad4ab43"
+        },
+        {
+          "name": "Dhalsim charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:51:20",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Dhalsim char_info.json",
+          "bytes": 13079,
+          "modified": "2026-10-14T10:51:20",
+          "sha256": "e596d59bb1cde7a333284c5e46c3d8fa2cac25651bc80ac1cdda3f2c2a2d693f"
+        },
+        {
+          "name": "Dhalsim assist_combo.json",
+          "bytes": 349153,
+          "modified": "2026-10-14T10:51:20",
+          "sha256": "aa68caadbde748435c0088f7f569462d80268e2d15a4ddd73968e2bb5434dccf"
+        },
+        {
+          "name": "Dhalsim moves_dict.json",
+          "bytes": 13423404,
+          "modified": "2026-10-14T10:51:23",
+          "sha256": "1cdfb5f0b88424babf52feeeee0ad092f56974e7093fcb43735b6c59fd3a91e6"
+        },
+        {
+          "name": "Dhalsim Names.json",
+          "bytes": 19970,
+          "modified": "2026-10-14T10:51:17",
+          "sha256": "3fa1c6a0960ec4a70292c068021a1507c0b10ad45c30913dc633cbc5d054af2c"
+        }
+      ],
+      "move_count": 657,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "8": 344
+      }
+    },
+    {
+      "id": 9,
+      "name": "Cammy",
+      "files": [
+        {
+          "name": "Cammy HIT_DT.json",
+          "bytes": 13477881,
+          "modified": "2026-10-14T10:51:31",
+          "sha256": "feffa5a72f8e32a39436672d255b4abdb94f9043738aeabb743fff0ffe96e109"
+        },
+        {
+          "name": "Cammy triggers.json",
+          "bytes": 1049142,
+          "modified": "2026-10-14T10:51:31",
+          "sha256": "0a049083fc2cfef73555818416cbaa5033f18837acd8d4774501544c820d96c4"
+        },
+        {
+          "name": "Cammy atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:51:31",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Cammy tgroups.json",
+          "bytes": 19224,
+          "modified": "2026-10-14T10:51:31",
+          "sha256": "9c9b527ade213c33785b6a0e9127ed8afe9732e0acf1824998e9d4793054b8d5"
+        },
+        {
+          "name": "Cammy rects.json",
+          "bytes": 194950,
+          "modified": "2026-10-14T10:51:31",
+          "sha256": "14fe21f71a2d393a11dd9f826b956f361673128fb01f0e722d833a3069472fb2"
+        },
+        {
+          "name": "Cammy commands.json",
+          "bytes": 574753,
+          "modified": "2026-10-14T10:51:31",
+          "sha256": "595b7d1fa939224dafc898d746772ddd4ccf5f151d9feb38431898ab63d2d35e"
+        },
+        {
+          "name": "Cammy charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:51:31",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Cammy char_info.json",
+          "bytes": 10751,
+          "modified": "2026-10-14T10:51:31",
+          "sha256": "40abc9c105375bfc58971a4cad579d892aa2ae9e79c81cd1b22c3d7ff85edcaa"
+        },
+        {
+          "name": "Cammy assist_combo.json",
+          "bytes": 349093,
+          "modified": "2026-10-14T10:51:31",
+          "sha256": "f774706a8645bb5c14c27e09659a1436c7d6694c3c483217e7fe34da58eadd26"
+        },
+        {
+          "name": "Cammy moves_dict.json",
+          "bytes": 12474793,
+          "modified": "2026-10-14T10:51:34",
+          "sha256": "36df7966696f16280b2ae8b431c7be5fc0198b227a84fefc12b473633d5a191f"
+        },
+        {
+          "name": "Cammy Names.json",
+          "bytes": 16886,
+          "modified": "2026-10-14T10:51:28",
+          "sha256": "85c02a59e62872878fd1b9377573e885683ffa8093c6ede7e31411306c0c88ca"
+        }
+      ],
+      "move_count": 558,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "9": 355
+      }
+    },
+    {
+      "id": 10,
+      "name": "Ken",
+      "files": [
+        {
+          "name": "Ken HIT_DT.json",
+          "bytes": 12671504,
+          "modified": "2026-10-14T10:51:41",
+          "sha256": "f8614ea6307b59f8ec8d7a1a3ed1b6e37087eb23f93445ae1ce0150d1867cb14"
+        },
+        {
+          "name": "Ken triggers.json",
+          "bytes": 935609,
+          "modified": "2026-10-14T10:51:41",
+          "sha256": "99633a05d4c685c9103c44e272f1caa86b88fad4133929c425b32b8783fc6aa0"
+        },
+        {
+          "name": "Ken atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:51:41",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Ken tgroups.json",
+          "bytes": 16765,
+          "modified": "2026-10-14T10:51:41",
+          "sha256": "ca387979e8d3da4916aed88950e919feb67b8ba933b74e4dc8bd5cb043f3ca67"
+        },
+        {
+          "name": "Ken rects.json",
+          "bytes": 215799,
+          "modified": "2026-10-14T10:51:42",
+          "sha256": "0b9a340105e05e48642b8a0faebf300412822364073a5a50ea87b7cfc811caae"
+        },
+        {
+          "name": "Ken commands.json",
+          "bytes": 494542,
+          "modified": "2026-10-14T10:51:42",
+          "sha256": "730c37bd751a8a5c1a09875c4e417ed98bf3546e30a6b175d41ccfc5a6fbe68d"
+        },
+        {
+          "name": "Ken charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:51:42",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Ken char_info.json",
+          "bytes": 10010,
+          "modified": "2026-10-14T10:51:42",
+          "sha256": "ae0943c46881b00f781e85de181e090e9fa68986e06b2880c0713aa215acbc54"
+        },
+        {
+          "name": "Ken assist_combo.json",
+          "bytes": 349028,
+          "modified": "2026-10-14T10:51:42",
+          "sha256": "859fa8fc78dbf458987952dce04db64bcd99673b025aa3912a1104255e15ef52"
+        },
+        {
+          "name": "Ken moves_dict.json",
+          "bytes": 9697926,
+          "modified": "2026-10-14T10:51:44",
+          "sha256": "70b1c4e95d23bb1414bb30573c926ae11d12ce34239430c511b18c1c519b03ae"
+        },
+        {
+          "name": "Ken Names.json",
+          "bytes": 14570,
+          "modified": "2026-10-14T10:51:39",
+          "sha256": "b08913dddff1cc6564d018fd7218be21380ea7b878d239f38f429d7126267f37"
+        }
+      ],
+      "move_count": 501,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "10": 290,
+        "1": 2
+      }
+    },
+    {
+      "id": 11,
+      "name": "Dee Jay",
+      "files": [
+        {
+          "name": "Dee Jay HIT_DT.json",
+          "bytes": 15584165,
+          "modified": "2026-10-14T10:51:52",
+          "sha256": "85e94b6e032daab6db625ce62f78fbece14b17c571bd7a5d6a41b06f67988cef"
+        },
+        {
+          "name": "Dee Jay triggers.json",
+          "bytes": 1084472,
+          "modified": "2026-10-14T10:51:52",
+          "sha256": "5e4daf50981ecc2eab0e77183017686617e18ce50a29cd8066ae24f10ac5d68e"
+        },
+        {
+          "name": "Dee Jay atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:51:52",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Dee Jay tgroups.json",
+          "bytes": 18984,
+          "modified": "2026-10-14T10:51:52",
+          "sha256": "22fe27c005ef2b13eb819c0871c0e07982137ee30bded293aac212747d68b7f4"
+        },
+        {
+          "name": "Dee Jay rects.json",
+          "bytes": 298910,
+          "modified": "2026-10-14T10:51:52",
+          "sha256": "de3bf05553491f162012a4c6b2c692835d49201fad6d6757b9a151d1024a60cb"
+        },
+        {
+          "name": "Dee Jay commands.json",
+          "bytes": 548027,
+          "modified": "2026-10-14T10:51:52",
+          "sha256": "d1c46205f23bf37b7dbc7425ede9087d79a81d59ff257b51db804dc30f607f65"
+        },
+        {
+          "name": "Dee Jay charge.json",
+          "bytes": 861,
+          "modified": "2026-10-14T10:51:52",
+          "sha256": "df90469f88e0673d0ebe08e94e9a5d6737b71fc6653a4ddf6018928a3dea9671"
+        },
+        {
+          "name": "Dee Jay char_info.json",
+          "bytes": 13078,
+          "modified": "2026-10-14T10:51:52",
+          "sha256": "6d26a0623200f31405586fe3d4ac7438e9ef88dae853c7955706aa38dccb55e1"
+        },
+        {
+          "name": "Dee Jay assist_combo.json",
+          "bytes": 348977,
+          "modified": "2026-10-14T10:51:52",
+          "sha256": "bbb3e2c266b9e8bc828ecd910cc5713e3d80af8defedf37d2e378a6b48eb0b8a"
+        },
+        {
+          "name": "Dee Jay moves_dict.json",
+          "bytes": 13747343,
+          "modified": "2026-10-14T10:51:56",
+          "sha256": "ddbf434efcf6bcc71d50499143356fe2ca2d13682933c2d095d7318f2098cc2c"
+        },
+        {
+          "name": "Dee Jay Names.json",
+          "bytes": 17610,
+          "modified": "2026-10-14T10:51:49",
+          "sha256": "08b7526c6af6138d90f433a6811ec6daba6ac9ca55ab26b5fb1378ba2eb7211f"
+        }
+      ],
+      "move_count": 564,
+      "null_resources": [
+        "atemi"
+      ],
+      "motion_resource_id_counts": {
+        "11": 350,
+        "0": 1
+      }
+    },
+    {
+      "id": 12,
+      "name": "Lily",
+      "files": [
+        {
+          "name": "Lily HIT_DT.json",
+          "bytes": 16088800,
+          "modified": "2026-10-14T10:52:04",
+          "sha256": "6920e15ba36bd7f84341009b2d67a9874767a338b47801db6642ce3498cea41b"
+        },
+        {
+          "name": "Lily triggers.json",
+          "bytes": 902759,
+          "modified": "2026-10-14T10:52:04",
+          "sha256": "603799b3126da58c50eb1f01f1f4a1731c91a1c4ccc8a568da73ffb66c8ffaac"
+        },
+        {
+          "name": "Lily atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:52:04",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Lily tgroups.json",
+          "bytes": 20241,
+          "modified": "2026-10-14T10:52:04",
+          "sha256": "d48b5288042310b2131982011ce46f4e32447dc8ce8a59297d2e75d77d472046"
+        },
+        {
+          "name": "Lily rects.json",
+          "bytes": 233934,
+          "modified": "2026-10-14T10:52:04",
+          "sha256": "ea2fa1325161f5020df26ab3d9a296da05a61e344311db5189e6e6e019399a23"
+        },
+        {
+          "name": "Lily commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-14T10:52:04",
+          "sha256": "48ae451507bd11c8debb029cec4ba9196dea587173753dbfed803e289ad4ab43"
+        },
+        {
+          "name": "Lily charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:52:04",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Lily char_info.json",
+          "bytes": 11456,
+          "modified": "2026-10-14T10:52:04",
+          "sha256": "2de66adb28a5eec451c3d359e9cf5317d88539ce105f4935c33d06d0dc98220e"
+        },
+        {
+          "name": "Lily assist_combo.json",
+          "bytes": 349235,
+          "modified": "2026-10-14T10:52:04",
+          "sha256": "ca58559aaedfbf690443047489e4d78c8c90b8817a97b19c0de5df7686530860"
+        },
+        {
+          "name": "Lily moves_dict.json",
+          "bytes": 14021274,
+          "modified": "2026-10-14T10:52:07",
+          "sha256": "588ece4a5259a49a440111e6bb57f86507de06a0c8486649deed0d84665453bb"
+        },
+        {
+          "name": "Lily Names.json",
+          "bytes": 16710,
+          "modified": "2026-10-14T10:52:00",
+          "sha256": "9a958da9e091e649001a8ced830d06a082a7e1bc6f2d5c9be264c5dd98bc8562"
+        }
+      ],
+      "move_count": 549,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "12": 149
+      }
+    },
+    {
+      "id": 13,
+      "name": "AKI",
+      "files": [
+        {
+          "name": "AKI HIT_DT.json",
+          "bytes": 12865363,
+          "modified": "2026-10-14T10:52:14",
+          "sha256": "b1cd8696c6b1487b541d4b3b021a9432c943d53c676995307c992963690656f3"
+        },
+        {
+          "name": "AKI triggers.json",
+          "bytes": 646111,
+          "modified": "2026-10-14T10:52:15",
+          "sha256": "cd1975bbaee4f4bbe4464e7bb5c8b6de96f6cd864aca5a6570eabed205ed8417"
+        },
+        {
+          "name": "AKI atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:52:15",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "AKI tgroups.json",
+          "bytes": 13163,
+          "modified": "2026-10-14T10:52:15",
+          "sha256": "56b3775146b1d1c94428bc1fdc66bc333d15712a15ed0f2f69b5aa942574e770"
+        },
+        {
+          "name": "AKI rects.json",
+          "bytes": 269452,
+          "modified": "2026-10-14T10:52:15",
+          "sha256": "e0b721aa945404e5df4ea7de826202e2633ab4fd6e7e388c83a53e66d6da9925"
+        },
+        {
+          "name": "AKI commands.json",
+          "bytes": 481178,
+          "modified": "2026-10-14T10:52:15",
+          "sha256": "126885f13ab77e3ee5b215c92d858f78c172ffdaf4bfae2fb523baf8a9199882"
+        },
+        {
+          "name": "AKI charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:52:15",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "AKI char_info.json",
+          "bytes": 12287,
+          "modified": "2026-10-14T10:52:15",
+          "sha256": "aee554f44eac02acfc6712de5887fb08a7c7eba429b848ed070e9084ce4a3acf"
+        },
+        {
+          "name": "AKI assist_combo.json",
+          "bytes": 349049,
+          "modified": "2026-10-14T10:52:15",
+          "sha256": "254d2cd06f4df646af75806e243a7b51e5c86755cd21b1fbb4821a3450cab177"
+        },
+        {
+          "name": "AKI moves_dict.json",
+          "bytes": 11842641,
+          "modified": "2026-10-14T10:52:18",
+          "sha256": "cf2ab183792f29e17b64ba78fc01f442f17ad1c2e8fd503214ec10336c824ece"
+        },
+        {
+          "name": "AKI Names.json",
+          "bytes": 16585,
+          "modified": "2026-10-14T10:52:12",
+          "sha256": "7a8c37ae2f58a4f2522bcea1e8ec188362cfb9ad2ab22452f108376ba6c1b2a4"
+        }
+      ],
+      "move_count": 551,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "13": 269,
+        "2": 30
+      }
+    },
+    {
+      "id": 14,
+      "name": "Rashid",
+      "files": [
+        {
+          "name": "Rashid HIT_DT.json",
+          "bytes": 16985929,
+          "modified": "2026-10-14T10:52:26",
+          "sha256": "dc01ca0f5a52b91aac9a2bee04edd502b1321421e68d4c2caee5ef76901a8ffb"
+        },
+        {
+          "name": "Rashid triggers.json",
+          "bytes": 882979,
+          "modified": "2026-10-14T10:52:26",
+          "sha256": "23b47b0cc5bba2bc5d4fb266ada962a6de1b7bb08cb4132ee88f619a43f921f4"
+        },
+        {
+          "name": "Rashid atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:52:26",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Rashid tgroups.json",
+          "bytes": 17204,
+          "modified": "2026-10-14T10:52:26",
+          "sha256": "ce535bb6bfbdbbd86e19f3f9c10f9ef89c37d56bc1f2f6797bb1d9f4eeb35cbe"
+        },
+        {
+          "name": "Rashid rects.json",
+          "bytes": 271135,
+          "modified": "2026-10-14T10:52:26",
+          "sha256": "d010b82b0d214beaf776514df0be8e913991e2b0c75f8987a5b9979cf1b29811"
+        },
+        {
+          "name": "Rashid commands.json",
+          "bytes": 494542,
+          "modified": "2026-10-14T10:52:26",
+          "sha256": "730c37bd751a8a5c1a09875c4e417ed98bf3546e30a6b175d41ccfc5a6fbe68d"
+        },
+        {
+          "name": "Rashid charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:52:26",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Rashid char_info.json",
+          "bytes": 13403,
+          "modified": "2026-10-14T10:52:26",
+          "sha256": "6c33154d77eb3780f4f4510d6ec059763bf863927169c001efc4a04da4ca1014"
+        },
+        {
+          "name": "Rashid assist_combo.json",
+          "bytes": 349024,
+          "modified": "2026-10-14T10:52:26",
+          "sha256": "a4cdc6ca260749ee95724705256d02fa34ac993c345faebe42bab2aedf788302"
+        },
+        {
+          "name": "Rashid moves_dict.json",
+          "bytes": 15697013,
+          "modified": "2026-10-14T10:52:30",
+          "sha256": "9512fec6f9df34e2f547c7977ae59ba69d89048a35c40f47f5555d6b14f919fb"
+        },
+        {
+          "name": "Rashid Names.json",
+          "bytes": 17965,
+          "modified": "2026-10-14T10:52:22",
+          "sha256": "31c991f42e8194ee656b7e49986565acb3d90b95cf1c9772e6df3fb63336d07a"
+        }
+      ],
+      "move_count": 601,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "14": 362
+      }
+    },
+    {
+      "id": 15,
+      "name": "Blanka",
+      "files": [
+        {
+          "name": "Blanka HIT_DT.json",
+          "bytes": 16396105,
+          "modified": "2026-10-14T10:52:38",
+          "sha256": "3ada742d5701129edd00dbf68d42d60459927974ef41021715873eb9b76cee79"
+        },
+        {
+          "name": "Blanka triggers.json",
+          "bytes": 1064497,
+          "modified": "2026-10-14T10:52:38",
+          "sha256": "fcdf7e32bff66eeeecd9e1821a488d2dd459850f216ac51bfa250540e2cc001b"
+        },
+        {
+          "name": "Blanka atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:52:38",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Blanka tgroups.json",
+          "bytes": 19256,
+          "modified": "2026-10-14T10:52:38",
+          "sha256": "18ddde14e34faadf042f649f9edf02ea97d39adc9cad9769543ba62223ed6723"
+        },
+        {
+          "name": "Blanka rects.json",
+          "bytes": 342065,
+          "modified": "2026-10-14T10:52:38",
+          "sha256": "a9651bb4899aa33325d653cdf508687fca4066e7c235725e20544263f5bc156c"
+        },
+        {
+          "name": "Blanka commands.json",
+          "bytes": 561358,
+          "modified": "2026-10-14T10:52:38",
+          "sha256": "0732f966fe512f42579b15ad6866a5b3f9784e7c193d5936ac4709fffac5c676"
+        },
+        {
+          "name": "Blanka charge.json",
+          "bytes": 1719,
+          "modified": "2026-10-14T10:52:38",
+          "sha256": "d78d68506a3ee90a5c0fea115be30af99f4548b12788055a7c15a6fb86243cce"
+        },
+        {
+          "name": "Blanka char_info.json",
+          "bytes": 12333,
+          "modified": "2026-10-14T10:52:38",
+          "sha256": "4085742597d5c9f2c87108185710a4651109520512acd4a66e33b709462df548"
+        },
+        {
+          "name": "Blanka assist_combo.json",
+          "bytes": 348921,
+          "modified": "2026-10-14T10:52:39",
+          "sha256": "af48de7bf4928e8ba1c35ee0fa3b48173e26784e76260aeac388caef17b3cfd3"
+        },
+        {
+          "name": "Blanka moves_dict.json",
+          "bytes": 19204182,
+          "modified": "2026-10-14T10:52:43",
+          "sha256": "f11f1ef0e89dadf2065699c34049399a369ede0985fe7ef92a12b9572a7a370a"
+        },
+        {
+          "name": "Blanka Names.json",
+          "bytes": 20521,
+          "modified": "2026-10-14T10:52:35",
+          "sha256": "b9cadb47ba2344bc9273f92f43a174fb8f3530c444fc7792992811fe60620454"
+        }
+      ],
+      "move_count": 734,
+      "null_resources": [
+        "atemi"
+      ],
+      "motion_resource_id_counts": {
+        "15": 506
+      }
+    },
+    {
+      "id": 16,
+      "name": "Juri",
+      "files": [
+        {
+          "name": "Juri HIT_DT.json",
+          "bytes": 14674060,
+          "modified": "2026-10-14T10:52:50",
+          "sha256": "711ad1dd1a1eb652ff254c42dfeca560e12cf3c016a396d1505afb570f086811"
+        },
+        {
+          "name": "Juri triggers.json",
+          "bytes": 1035202,
+          "modified": "2026-10-14T10:52:51",
+          "sha256": "60026f2af40b288af50aea98d4256678b941794c6f3a9ea8df43c97fd8c47ac6"
+        },
+        {
+          "name": "Juri atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:52:51",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Juri tgroups.json",
+          "bytes": 23294,
+          "modified": "2026-10-14T10:52:51",
+          "sha256": "fca1c2a9dd5c32a1250bf889e6260fa1039d09cdfe6ea0e3690e53500da7a7f3"
+        },
+        {
+          "name": "Juri rects.json",
+          "bytes": 214886,
+          "modified": "2026-10-14T10:52:51",
+          "sha256": "1b9670b3209c883cac4ef7ce8d154f4392e7ca0d053e3c87a72150c9e015175f"
+        },
+        {
+          "name": "Juri commands.json",
+          "bytes": 494536,
+          "modified": "2026-10-14T10:52:51",
+          "sha256": "6960c6634849455863f3648cae6cae440dfd0a9621582cd3f7bccecb031d2dfb"
+        },
+        {
+          "name": "Juri charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:52:51",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Juri char_info.json",
+          "bytes": 19451,
+          "modified": "2026-10-14T10:52:51",
+          "sha256": "7809c7a1a47571ad14c2b0427edbe235b9f55129e68d1ac51b39d724e7053326"
+        },
+        {
+          "name": "Juri assist_combo.json",
+          "bytes": 349053,
+          "modified": "2026-10-14T10:52:51",
+          "sha256": "7c208b1fb0f873270e715529e3e4f3e7d0aa87777ee6e4a9a63808139a887a64"
+        },
+        {
+          "name": "Juri moves_dict.json",
+          "bytes": 14061029,
+          "modified": "2026-10-14T10:52:54",
+          "sha256": "13eb3d65352831f6ef6a645307072580ba12c7ec48879ca346ac4ea64b05b6fd"
+        },
+        {
+          "name": "Juri Names.json",
+          "bytes": 16204,
+          "modified": "2026-10-14T10:52:47",
+          "sha256": "7cdb636fdd730abe3236e5d5393cc58ecadfe5e3d304d69ade7bd33b65fcc495"
+        }
+      ],
+      "move_count": 584,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "16": 373
+      }
+    },
+    {
+      "id": 17,
+      "name": "Marisa",
+      "files": [
+        {
+          "name": "Marisa HIT_DT.json",
+          "bytes": 12572889,
+          "modified": "2026-10-14T10:53:01",
+          "sha256": "5c2ba527228154cc363e61f6bef516590c2e6d1c7a3e56b4d351813af9eef2a7"
+        },
+        {
+          "name": "Marisa triggers.json",
+          "bytes": 851599,
+          "modified": "2026-10-14T10:53:01",
+          "sha256": "d8b6f49770d03c0b6e513ad9e29256ee3460c1d3a92452998e5e863a9e2ca7e8"
+        },
+        {
+          "name": "Marisa atemi.json",
+          "bytes": 3413,
+          "modified": "2026-10-14T10:53:01",
+          "sha256": "dafef17a87690cff8d1ecf2a180410661d89c7af47afca9a483786f1870951b3"
+        },
+        {
+          "name": "Marisa tgroups.json",
+          "bytes": 12511,
+          "modified": "2026-10-14T10:53:01",
+          "sha256": "7daa5b3808d11e760bd0d636450e3474391012b518c669d860ca80b14c89b9f7"
+        },
+        {
+          "name": "Marisa rects.json",
+          "bytes": 219213,
+          "modified": "2026-10-14T10:53:02",
+          "sha256": "9743b3ff949ea8ba49f65dcbc93e269fc424923f27f37ba2a3033440a401162e"
+        },
+        {
+          "name": "Marisa commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-14T10:53:02",
+          "sha256": "48ae451507bd11c8debb029cec4ba9196dea587173753dbfed803e289ad4ab43"
+        },
+        {
+          "name": "Marisa charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:53:02",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Marisa char_info.json",
+          "bytes": 10757,
+          "modified": "2026-10-14T10:53:02",
+          "sha256": "63899fad95ca993a2cbcab0ddf3429700d3ee6ca822157e0e341dcc33fdb9c9d"
+        },
+        {
+          "name": "Marisa assist_combo.json",
+          "bytes": 349269,
+          "modified": "2026-10-14T10:53:02",
+          "sha256": "c1bc437376f3b3e55882d878cd1189c1f15e23c19d3e00394cc5d4299761a643"
+        },
+        {
+          "name": "Marisa moves_dict.json",
+          "bytes": 12517080,
+          "modified": "2026-10-14T10:53:04",
+          "sha256": "14e2cb33473f37d783a85420b5b2cf232ec2a2480b00a00818b2fadb700485cb"
+        },
+        {
+          "name": "Marisa Names.json",
+          "bytes": 15222,
+          "modified": "2026-10-14T10:52:59",
+          "sha256": "9d4a461bf6d8ab7ec6c0cb7b6bb856b5b8810dd7bd047c4aaf7a3b700e05c306"
+        }
+      ],
+      "move_count": 530,
+      "null_resources": [
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "17": 326
+      }
+    },
+    {
+      "id": 18,
+      "name": "Guile",
+      "files": [
+        {
+          "name": "Guile HIT_DT.json",
+          "bytes": 11466566,
+          "modified": "2026-10-14T10:53:12",
+          "sha256": "a4a94c6a9922fce28289e9dcbb912651ff3d32fbe6a45a6f3c7b09b425966bbf"
+        },
+        {
+          "name": "Guile triggers.json",
+          "bytes": 1093417,
+          "modified": "2026-10-14T10:53:12",
+          "sha256": "9a64f7880ab60289266d6500e522679bec29e90af40c814b763a3d21944aa045"
+        },
+        {
+          "name": "Guile atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:53:12",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Guile tgroups.json",
+          "bytes": 19304,
+          "modified": "2026-10-14T10:53:12",
+          "sha256": "116b667a6b1b6c43fb0b731d9f54e91914fe2a93484e54008cc22079c512fa44"
+        },
+        {
+          "name": "Guile rects.json",
+          "bytes": 191539,
+          "modified": "2026-10-14T10:53:12",
+          "sha256": "1eb614cb648972a3bf5ea5bd9c458df61e1028baa4a16b122ea5f4b77984476d"
+        },
+        {
+          "name": "Guile commands.json",
+          "bytes": 668296,
+          "modified": "2026-10-14T10:53:12",
+          "sha256": "0c76ee34a22ebc6848a1204496f704db54b91ca557165d7ff986bf7ccddbe3b6"
+        },
+        {
+          "name": "Guile charge.json",
+          "bytes": 4724,
+          "modified": "2026-10-14T10:53:12",
+          "sha256": "4dc1f9d27690d3cb402d1f6dbde2ec4b2c60e38d7d08c219adf6917350030f8f"
+        },
+        {
+          "name": "Guile char_info.json",
+          "bytes": 13899,
+          "modified": "2026-10-14T10:53:12",
+          "sha256": "085c378fb460429006dce7c8999a0901ead706e00fcc4fe6d8999f0baa9ec1dd"
+        },
+        {
+          "name": "Guile assist_combo.json",
+          "bytes": 349042,
+          "modified": "2026-10-14T10:53:12",
+          "sha256": "fd27b822834676176dd0b78da6eecdb8c6ed859cf82997acefa1d1847112d7ba"
+        },
+        {
+          "name": "Guile moves_dict.json",
+          "bytes": 12644051,
+          "modified": "2026-10-14T10:53:15",
+          "sha256": "30bae13306b93a008587e6227ed87c69e2ef2761fe3a6a39cc5b5482d40344d9"
+        },
+        {
+          "name": "Guile Names.json",
+          "bytes": 17075,
+          "modified": "2026-10-14T10:53:09",
+          "sha256": "c57adee68d980abbdac00310241e5ea78aed1d838740314d07796654c33b00c3"
+        }
+      ],
+      "move_count": 569,
+      "null_resources": [
+        "atemi"
+      ],
+      "motion_resource_id_counts": {
+        "18": 314
+      }
+    },
+    {
+      "id": 19,
+      "name": "Ed",
+      "files": [
+        {
+          "name": "Ed HIT_DT.json",
+          "bytes": 11159300,
+          "modified": "2026-10-14T10:53:22",
+          "sha256": "8aca020a4384e52496c4d8240657c48b4ae9fc7615664965fbd4223ee2892d3f"
+        },
+        {
+          "name": "Ed triggers.json",
+          "bytes": 871426,
+          "modified": "2026-10-14T10:53:22",
+          "sha256": "505f82a7e227ccc7e2952a298932996a2ba2cc70b93e08c77d14a65e8914a196"
+        },
+        {
+          "name": "Ed atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:53:22",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Ed tgroups.json",
+          "bytes": 16962,
+          "modified": "2026-10-14T10:53:22",
+          "sha256": "d3e1396607aa31d1dee96053bb8f365e6e84a9b7aa37dc9468c57c715e7cf59c"
+        },
+        {
+          "name": "Ed rects.json",
+          "bytes": 222735,
+          "modified": "2026-10-14T10:53:22",
+          "sha256": "748c72190dbf83cf301b1953c02ee70f15a4a28786781f050436d410db513d95"
+        },
+        {
+          "name": "Ed commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-14T10:53:22",
+          "sha256": "48ae451507bd11c8debb029cec4ba9196dea587173753dbfed803e289ad4ab43"
+        },
+        {
+          "name": "Ed charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:53:22",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Ed char_info.json",
+          "bytes": 10044,
+          "modified": "2026-10-14T10:53:22",
+          "sha256": "cd898fb80134dd767c8cc6cc81e6c31dee101ce18b06a0e74719fa24a4f8c3e9"
+        },
+        {
+          "name": "Ed assist_combo.json",
+          "bytes": 349007,
+          "modified": "2026-10-14T10:53:22",
+          "sha256": "962ace772f4a3e830fcbf49e207197892d39a82d86e70b0d8b1532f97f886b7e"
+        },
+        {
+          "name": "Ed moves_dict.json",
+          "bytes": 13250007,
+          "modified": "2026-10-14T10:53:25",
+          "sha256": "14c7349b3e2a7655565b1ae2c794b62de8a71d7129bf4ca9ef416da83565a551"
+        },
+        {
+          "name": "Ed Names.json",
+          "bytes": 16299,
+          "modified": "2026-10-14T10:53:19",
+          "sha256": "fb58827e28d38a7b67cacfe24b2ba3685928fdf7843ac5a0338f2381e15f3e25"
+        }
+      ],
+      "move_count": 540,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "19": 312
+      }
+    },
+    {
+      "id": 20,
+      "name": "E Honda",
+      "files": [
+        {
+          "name": "E Honda HIT_DT.json",
+          "bytes": 15689604,
+          "modified": "2026-10-14T10:53:33",
+          "sha256": "2cdd37de0736c1f3c6fe7ec64c829b3197675a807786ee148a0d039b980095bc"
+        },
+        {
+          "name": "E Honda triggers.json",
+          "bytes": 953947,
+          "modified": "2026-10-14T10:53:33",
+          "sha256": "1b8c596f1c60efb2d2120a0cc1cdc6b7c00fa60997c020dff53d1d7c5863178b"
+        },
+        {
+          "name": "E Honda atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:53:33",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "E Honda tgroups.json",
+          "bytes": 14702,
+          "modified": "2026-10-14T10:53:33",
+          "sha256": "7fd15e91f836201684e152e615c1cb570c9783ac6234994371eef3cff04d3976"
+        },
+        {
+          "name": "E Honda rects.json",
+          "bytes": 272013,
+          "modified": "2026-10-14T10:53:34",
+          "sha256": "e06433d03c14b2fa658674bebcbb1d77069145edc40a23ba9e8f7ff9e76b7d7f"
+        },
+        {
+          "name": "E Honda commands.json",
+          "bytes": 574746,
+          "modified": "2026-10-14T10:53:34",
+          "sha256": "3bb2cbfb575bafa6032066bf62d8f06cff8443eb218c06247e7ebe8586142a1b"
+        },
+        {
+          "name": "E Honda charge.json",
+          "bytes": 1718,
+          "modified": "2026-10-14T10:53:34",
+          "sha256": "ce3b4a3f67fe6fcb4821986cc1ab4ccd6850ff4d025738b74670384e79cba616"
+        },
+        {
+          "name": "E Honda char_info.json",
+          "bytes": 10080,
+          "modified": "2026-10-14T10:53:34",
+          "sha256": "2ff10296f0e380d5319b15621ca1aa139eefde9412da963e1f176be902f6051d"
+        },
+        {
+          "name": "E Honda assist_combo.json",
+          "bytes": 349109,
+          "modified": "2026-10-14T10:53:34",
+          "sha256": "466c7b036881655e4eafeaa576e8d9aeb8a04b8b18280c046a68b091d17ec51d"
+        },
+        {
+          "name": "E Honda moves_dict.json",
+          "bytes": 13518818,
+          "modified": "2026-10-14T10:53:37",
+          "sha256": "926c51a4456e3dd1a7fdcfe619c8459ff68ca5d995c8dc51b87dfd8f3c034b02"
+        },
+        {
+          "name": "E Honda Names.json",
+          "bytes": 15633,
+          "modified": "2026-10-14T10:53:30",
+          "sha256": "8d77617a7d4d25770fff662845ccbc3ebcf58c3b11889d6f2dca90ea79aea971"
+        }
+      ],
+      "move_count": 532,
+      "null_resources": [
+        "atemi"
+      ],
+      "motion_resource_id_counts": {
+        "20": 327
+      }
+    },
+    {
+      "id": 21,
+      "name": "Jamie",
+      "files": [
+        {
+          "name": "Jamie HIT_DT.json",
+          "bytes": 17696707,
+          "modified": "2026-10-14T10:53:45",
+          "sha256": "2557b8c0d5d3370ee3076477c0aa57ead8d814db7fc99051210eb86b64683b36"
+        },
+        {
+          "name": "Jamie triggers.json",
+          "bytes": 1371647,
+          "modified": "2026-10-14T10:53:45",
+          "sha256": "96b335f2904e7f793e98b57d5702b13da5b7c7751107cc3303780f4a6dcb9ebf"
+        },
+        {
+          "name": "Jamie atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:53:45",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Jamie tgroups.json",
+          "bytes": 18602,
+          "modified": "2026-10-14T10:53:45",
+          "sha256": "da17d4f06763e79dab45f9cb4b146534d8ff9ce8aead9a577d74bf7035e8b108"
+        },
+        {
+          "name": "Jamie rects.json",
+          "bytes": 232237,
+          "modified": "2026-10-14T10:53:45",
+          "sha256": "e3b2c80ef821f88b73eb26c68727eeece30caf2c39adfd382cb028b64361e846"
+        },
+        {
+          "name": "Jamie commands.json",
+          "bytes": 628203,
+          "modified": "2026-10-14T10:53:45",
+          "sha256": "2d842d75b91c156f0ccaf586dd9800d3eb930683778c1964afcd1d0031a59fc6"
+        },
+        {
+          "name": "Jamie charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:53:45",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Jamie char_info.json",
+          "bytes": 62699,
+          "modified": "2026-10-14T10:53:45",
+          "sha256": "0f6351cb3c97cff0c680a12a565c932a17b9af8f248f763a52b05e66220b3336"
+        },
+        {
+          "name": "Jamie assist_combo.json",
+          "bytes": 349458,
+          "modified": "2026-10-14T10:53:46",
+          "sha256": "7e767846eb09bd67b78862053a4c801de576c3cbfbcbfa0723e6b3f1fbea34dc"
+        },
+        {
+          "name": "Jamie moves_dict.json",
+          "bytes": 15969024,
+          "modified": "2026-10-14T10:53:49",
+          "sha256": "406fb532521a2e54aa41d3c704a071d1890f399d67f4ef78fbecb53b41e7790c"
+        },
+        {
+          "name": "Jamie Names.json",
+          "bytes": 16023,
+          "modified": "2026-10-14T10:53:41",
+          "sha256": "22083a4feeba8e8131fcf7997af8b1eee9ecf18c2895711188ec34f77aa6761e"
+        }
+      ],
+      "move_count": 598,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "21": 391
+      }
+    },
+    {
+      "id": 22,
+      "name": "Akuma",
+      "files": [
+        {
+          "name": "Akuma HIT_DT.json",
+          "bytes": 14782228,
+          "modified": "2026-10-14T10:53:57",
+          "sha256": "ab135db3f4857f775378658cbcbb83344d95ed6bc51815b5d1bb5bf7ebe3d444"
+        },
+        {
+          "name": "Akuma triggers.json",
+          "bytes": 1069094,
+          "modified": "2026-10-14T10:53:57",
+          "sha256": "d234c7c715f1002c63b8410902e3df95675e0008d9800c583f86f74951f0bf79"
+        },
+        {
+          "name": "Akuma atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:53:57",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Akuma tgroups.json",
+          "bytes": 17518,
+          "modified": "2026-10-14T10:53:57",
+          "sha256": "2acbd53de697bedf9d6dfcd73d907eaaf75be251d1290815eabc122245046423"
+        },
+        {
+          "name": "Akuma rects.json",
+          "bytes": 239972,
+          "modified": "2026-10-14T10:53:57",
+          "sha256": "9cbc92af42fb34c13fc5f069b4ac5c1d1acfd6aa1eba2435369b9ac67539fea6"
+        },
+        {
+          "name": "Akuma commands.json",
+          "bytes": 521337,
+          "modified": "2026-10-14T10:53:57",
+          "sha256": "df3a7927ae9b92c1ec3af877ba690f04f3ad27735d5b2d55133f427b9e351cdc"
+        },
+        {
+          "name": "Akuma charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:53:57",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Akuma char_info.json",
+          "bytes": 10008,
+          "modified": "2026-10-14T10:53:57",
+          "sha256": "ac157cd086b07a2560bf80c5ab8dd04d9bfdc427f75f1d1cf8e24d8df213005e"
+        },
+        {
+          "name": "Akuma assist_combo.json",
+          "bytes": 349024,
+          "modified": "2026-10-14T10:53:57",
+          "sha256": "72e9c95224dd6de74b3f869d9980ef9f7bde5c720d0d465101e0a7d3d2d4bd9f"
+        },
+        {
+          "name": "Akuma moves_dict.json",
+          "bytes": 15909497,
+          "modified": "2026-10-14T10:54:01",
+          "sha256": "76c204368698d52438a06afbe2e5796b21db1f8d0d8d7f60facf9485427ecab5"
+        },
+        {
+          "name": "Akuma Names.json",
+          "bytes": 18286,
+          "modified": "2026-10-14T10:53:54",
+          "sha256": "07d8bdd5c57a96ff14fdc093e1c30145d5eeeb9ac5afe1177601b9fc95f4890d"
+        }
+      ],
+      "move_count": 611,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "22": 377
+      }
+    },
+    {
+      "id": 25,
+      "name": "Sagat",
+      "files": [
+        {
+          "name": "Sagat HIT_DT.json",
+          "bytes": 13075205,
+          "modified": "2026-10-14T10:54:08",
+          "sha256": "83a6f38d26b667c7d4f5e4f007ff2970da301283e3b186840c1b46fc0943be2c"
+        },
+        {
+          "name": "Sagat triggers.json",
+          "bytes": 798560,
+          "modified": "2026-10-14T10:54:08",
+          "sha256": "68ab9c50144c14f46dd8185e6c714b66f48014671cfb13debb31d9bbfac5bc9f"
+        },
+        {
+          "name": "Sagat atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:54:08",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Sagat tgroups.json",
+          "bytes": 13810,
+          "modified": "2026-10-14T10:54:08",
+          "sha256": "f092dbeb48dc8dbdaf72edeb7aba9c165d8d53c8bd9d0c293d98ed31f35cd8c3"
+        },
+        {
+          "name": "Sagat rects.json",
+          "bytes": 337847,
+          "modified": "2026-10-14T10:54:08",
+          "sha256": "d9e25ea5079cc96674c9f4f76262168e21a7212b0815ccf483df693940615eca"
+        },
+        {
+          "name": "Sagat commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-14T10:54:09",
+          "sha256": "48ae451507bd11c8debb029cec4ba9196dea587173753dbfed803e289ad4ab43"
+        },
+        {
+          "name": "Sagat charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:54:09",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Sagat char_info.json",
+          "bytes": 10010,
+          "modified": "2026-10-14T10:54:09",
+          "sha256": "a72612ccb09f4f49aa15e2d7425de6941f2bcd96f48984f0812e273bc90639e5"
+        },
+        {
+          "name": "Sagat assist_combo.json",
+          "bytes": 349241,
+          "modified": "2026-10-14T10:54:09",
+          "sha256": "99a1eaf94442a3b029185cb67c542c0fb68ea06e49638189e65d5ba012f9f043"
+        },
+        {
+          "name": "Sagat moves_dict.json",
+          "bytes": 11933740,
+          "modified": "2026-10-14T10:54:11",
+          "sha256": "087de45b3663a0692ed4772e7876f242a04b492dbef89d516820d8eb5facdff3"
+        },
+        {
+          "name": "Sagat Names.json",
+          "bytes": 15155,
+          "modified": "2026-10-14T10:54:05",
+          "sha256": "130617effc689c2e2b64b11ec44fcb379b78570df3f0c6f8fed290139072b60e"
+        }
+      ],
+      "move_count": 523,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "25": 306,
+        "17": 6
+      }
+    },
+    {
+      "id": 26,
+      "name": "M Bison",
+      "files": [
+        {
+          "name": "M Bison HIT_DT.json",
+          "bytes": 14985799,
+          "modified": "2026-10-14T10:54:20",
+          "sha256": "796e7b5019eaabc2e101a4f6da7c1aa0a1d8215a2cd9c02f71c94c9860718885"
+        },
+        {
+          "name": "M Bison triggers.json",
+          "bytes": 785830,
+          "modified": "2026-10-14T10:54:20",
+          "sha256": "9e54ae0e41f1955985a81459a9ba18de8a5a4a751d9c95b0b4978ba18eb00afe"
+        },
+        {
+          "name": "M Bison atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:54:20",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "M Bison tgroups.json",
+          "bytes": 14208,
+          "modified": "2026-10-14T10:54:20",
+          "sha256": "1d56114164c460afbe4069df5ce34defcde404cdee9d2b4d0cc459b659f3698a"
+        },
+        {
+          "name": "M Bison rects.json",
+          "bytes": 277181,
+          "modified": "2026-10-14T10:54:20",
+          "sha256": "116ba50dcb36ccc79e82837adfdf773497f985afd342256cce12217a571dfd9a"
+        },
+        {
+          "name": "M Bison commands.json",
+          "bytes": 534624,
+          "modified": "2026-10-14T10:54:20",
+          "sha256": "90004e9ee28b0de5b03cfad45960bcbe0d5b5b2d34a9b1144df887924cc4923a"
+        },
+        {
+          "name": "M Bison charge.json",
+          "bytes": 859,
+          "modified": "2026-10-14T10:54:20",
+          "sha256": "a2ed6068b1c2eb73a9e4d15650fe56dac8ab7144d554507b43a9ace2d4554ba8"
+        },
+        {
+          "name": "M Bison char_info.json",
+          "bytes": 10047,
+          "modified": "2026-10-14T10:54:20",
+          "sha256": "b55317292d5cc42c04e52b04fef6339ccd79657d13b3740426d849230e1b6d24"
+        },
+        {
+          "name": "M Bison assist_combo.json",
+          "bytes": 349064,
+          "modified": "2026-10-14T10:54:20",
+          "sha256": "92c4fd89ff44ea34e7b9aabb23b110b382dd3392d0d91ed8c9874b2581e322f6"
+        },
+        {
+          "name": "M Bison moves_dict.json",
+          "bytes": 19033171,
+          "modified": "2026-10-14T10:54:24",
+          "sha256": "2541c2649650b31899655352f44ad6907f8be143513580dc5983b42390ba67b4"
+        },
+        {
+          "name": "M Bison Names.json",
+          "bytes": 21672,
+          "modified": "2026-10-14T10:54:16",
+          "sha256": "0f92cfffd1664fee67c3fc99034e13abe55ecb0a7cb8d575ce3da094f3abef6e"
+        }
+      ],
+      "move_count": 665,
+      "null_resources": [
+        "atemi"
+      ],
+      "motion_resource_id_counts": {
+        "26": 442,
+        "2": 6
+      }
+    },
+    {
+      "id": 27,
+      "name": "Terry",
+      "files": [
+        {
+          "name": "Terry HIT_DT.json",
+          "bytes": 11263564,
+          "modified": "2026-10-14T10:54:31",
+          "sha256": "b6df9650dca2e81dc2fad8faa9c1c322370de45a4b4a74bdc3eec0d9f43c7298"
+        },
+        {
+          "name": "Terry triggers.json",
+          "bytes": 790042,
+          "modified": "2026-10-14T10:54:31",
+          "sha256": "5f7c32b388bcf6263da1eacfdf803ba8c115c6b6e9700151971655f33253215e"
+        },
+        {
+          "name": "Terry atemi.json",
+          "bytes": 1140,
+          "modified": "2026-10-14T10:54:31",
+          "sha256": "df48e7c0c2b4c6ea9173b62f2ef139242b9a9910cfe28ff2da1ef14420448bb7"
+        },
+        {
+          "name": "Terry tgroups.json",
+          "bytes": 16674,
+          "modified": "2026-10-14T10:54:31",
+          "sha256": "fedf875cf6d05cbc72d5ba26a5d800f7fe0ed4b3b4b954c7f81c4c5ea173c7d2"
+        },
+        {
+          "name": "Terry rects.json",
+          "bytes": 236558,
+          "modified": "2026-10-14T10:54:31",
+          "sha256": "80e54112bbdcb2ddd0638cccbd5361f24e17828be26fbc6cc58fa096f19c7e11"
+        },
+        {
+          "name": "Terry commands.json",
+          "bytes": 494539,
+          "modified": "2026-10-14T10:54:32",
+          "sha256": "5bd431436814c8ca58fec5f18a9c1d5287a7d908404e35b7f0e332edf799f36b"
+        },
+        {
+          "name": "Terry charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:54:32",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Terry char_info.json",
+          "bytes": 14598,
+          "modified": "2026-10-14T10:54:32",
+          "sha256": "b26ae532750bed2cfcda1a7c1c30252a3de49cb6d24335ee42bfee198f9af0ec"
+        },
+        {
+          "name": "Terry assist_combo.json",
+          "bytes": 348930,
+          "modified": "2026-10-14T10:54:32",
+          "sha256": "288e03e4e1e26110af1a5a8e5d57d32255ac5217a62c109788e9a549067695bf"
+        },
+        {
+          "name": "Terry moves_dict.json",
+          "bytes": 10301277,
+          "modified": "2026-10-14T10:54:34",
+          "sha256": "0f356084defc7362cf3d8b1ffacd3b67249c2d40e4bb45697066bdb9471abeb6"
+        },
+        {
+          "name": "Terry Names.json",
+          "bytes": 14576,
+          "modified": "2026-10-14T10:54:29",
+          "sha256": "5123279065f45fa5ef9db07e35db27332cc9cba0b503966b3be150f04bcb3eb3"
+        }
+      ],
+      "move_count": 505,
+      "null_resources": [
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "27": 281,
+        "10": 6
+      }
+    },
+    {
+      "id": 28,
+      "name": "Mai",
+      "files": [
+        {
+          "name": "Mai HIT_DT.json",
+          "bytes": 17392540,
+          "modified": "2026-10-14T10:54:43",
+          "sha256": "0d88e4762045c5e582d946140f5a95eb448250ae2d7426ea25caf4533afe7b0f"
+        },
+        {
+          "name": "Mai triggers.json",
+          "bytes": 988830,
+          "modified": "2026-10-14T10:54:43",
+          "sha256": "25da010f76766b641c88f0afcda4ed6879e9d949a724ab7f0f047b36988fdeb0"
+        },
+        {
+          "name": "Mai atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:54:43",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Mai tgroups.json",
+          "bytes": 24447,
+          "modified": "2026-10-14T10:54:43",
+          "sha256": "8d6d3629e4cadf724f579f6509b7ce75a78d699b618c4632fa0d7def1daee21f"
+        },
+        {
+          "name": "Mai rects.json",
+          "bytes": 233042,
+          "modified": "2026-10-14T10:54:43",
+          "sha256": "a681387f75a21fd17efdf1278393e901edc332c43ed9e54263c310dc15ae0b46"
+        },
+        {
+          "name": "Mai commands.json",
+          "bytes": 481189,
+          "modified": "2026-10-14T10:54:43",
+          "sha256": "b2b92c5e3120b7a4cf2f16a42ad01a9218bd806f3263d28970dae14e5e0d3ef3"
+        },
+        {
+          "name": "Mai charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:54:43",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Mai char_info.json",
+          "bytes": 12080,
+          "modified": "2026-10-14T10:54:43",
+          "sha256": "33e2c62d2c904154bf70fc25216c5699b59ce723e699291bafdb945812f869d3"
+        },
+        {
+          "name": "Mai assist_combo.json",
+          "bytes": 349153,
+          "modified": "2026-10-14T10:54:43",
+          "sha256": "7b6c8b21e7213a1cabdb8a17504402932fc6a8b3692803c21dd137e7670fb40f"
+        },
+        {
+          "name": "Mai moves_dict.json",
+          "bytes": 18709013,
+          "modified": "2026-10-14T10:54:47",
+          "sha256": "ef5dce505c8319e56d81389e0feb08d44d5a95ca8ed8ea3c97df65a07b13d861"
+        },
+        {
+          "name": "Mai Names.json",
+          "bytes": 19903,
+          "modified": "2026-10-14T10:54:39",
+          "sha256": "92280014b2279ba564c96ba1a1f36a1cbd3a4dc9793a0efdc57991e5917b448f"
+        }
+      ],
+      "move_count": 658,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "28": 429
+      }
+    },
+    {
+      "id": 29,
+      "name": "Elena",
+      "files": [
+        {
+          "name": "Elena HIT_DT.json",
+          "bytes": 12865242,
+          "modified": "2026-10-14T10:54:55",
+          "sha256": "25761e6602a6617ff83c1e5ece8da59f4ccd38c8f2f88be82697a8440cab610c"
+        },
+        {
+          "name": "Elena triggers.json",
+          "bytes": 989160,
+          "modified": "2026-10-14T10:54:55",
+          "sha256": "9d88b26aa104c2831e7d20cf5b6b021d51e0c035d1a811de60421ce4e5a1b24a"
+        },
+        {
+          "name": "Elena atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:54:55",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Elena tgroups.json",
+          "bytes": 15569,
+          "modified": "2026-10-14T10:54:55",
+          "sha256": "de3b3558dab32173d8c14dc88b21b1a67fcf1a465a3c27c84021d682d4b1adc6"
+        },
+        {
+          "name": "Elena rects.json",
+          "bytes": 204519,
+          "modified": "2026-10-14T10:54:55",
+          "sha256": "c0b26a88807513849224e611770d4764e44a23fd5be4cd776d320b849e04a58f"
+        },
+        {
+          "name": "Elena commands.json",
+          "bytes": 494531,
+          "modified": "2026-10-14T10:54:55",
+          "sha256": "5e96008ff3f6c341e9c79c2058d5a732e9904ef6095a04cb6ef25dc48a70aa97"
+        },
+        {
+          "name": "Elena charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:54:55",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Elena char_info.json",
+          "bytes": 11442,
+          "modified": "2026-10-14T10:54:55",
+          "sha256": "3bb3ae739c0e80666d04f3e838f9a1008c3a3dff073df903e6c2a7214d738fcc"
+        },
+        {
+          "name": "Elena assist_combo.json",
+          "bytes": 349306,
+          "modified": "2026-10-14T10:54:55",
+          "sha256": "ead8d9d3166f19cae2de06e9d56e54c4342e29e07a324e8635db57ee53a6a4f2"
+        },
+        {
+          "name": "Elena moves_dict.json",
+          "bytes": 14585666,
+          "modified": "2026-10-14T10:54:58",
+          "sha256": "3c97556d9528aeeae407412d5913c9d750ed0bf448ba60d785bce72c5463f2c2"
+        },
+        {
+          "name": "Elena Names.json",
+          "bytes": 15111,
+          "modified": "2026-10-14T10:54:52",
+          "sha256": "75aaf732ba784e7eb9574d235696f2225042726fb21d781191ae2a12926946aa"
+        }
+      ],
+      "move_count": 523,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "29": 325
+      }
+    },
+    {
+      "id": 30,
+      "name": "C Viper",
+      "files": [
+        {
+          "name": "C Viper HIT_DT.json",
+          "bytes": 11067273,
+          "modified": "2026-10-14T10:55:05",
+          "sha256": "12aed23cb671db1c31212f43f474cd939a8a600751571da64414305698e66b11"
+        },
+        {
+          "name": "C Viper triggers.json",
+          "bytes": 1431191,
+          "modified": "2026-10-14T10:55:06",
+          "sha256": "05f30cc3d1c46656ff04b552ac023c7e05326957080cf209446a3cb7fd9a0207"
+        },
+        {
+          "name": "C Viper atemi.json",
+          "bytes": 1138,
+          "modified": "2026-10-14T10:55:06",
+          "sha256": "34827c1cd5edb4419f284f8c0d46b8df505387bc91f8436ee474e2604519fcb7"
+        },
+        {
+          "name": "C Viper tgroups.json",
+          "bytes": 16754,
+          "modified": "2026-10-14T10:55:06",
+          "sha256": "518a560f5037fa187d079ec984cbc523f17c0c53c5e111a21ab7a07d7e460153"
+        },
+        {
+          "name": "C Viper rects.json",
+          "bytes": 191519,
+          "modified": "2026-10-14T10:55:06",
+          "sha256": "70094e4edb085e300a0b52834549f5db7b164ecc8213a91ab740ca53ed84e5dd"
+        },
+        {
+          "name": "C Viper commands.json",
+          "bytes": 668331,
+          "modified": "2026-10-14T10:55:06",
+          "sha256": "b058465bf37b29715c6e79a5e77a005bdb6d40f2bdeefde0cdfcd1366c355bc5"
+        },
+        {
+          "name": "C Viper charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:55:06",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "C Viper char_info.json",
+          "bytes": 13655,
+          "modified": "2026-10-14T10:55:06",
+          "sha256": "d2f9973d0ad0648e6aaa0a62bad3d635d338134aa6c33af72fa9376a6cfa3dd0"
+        },
+        {
+          "name": "C Viper assist_combo.json",
+          "bytes": 349053,
+          "modified": "2026-10-14T10:55:06",
+          "sha256": "73e43462e200d3327d17045a7d37152ffce1ef450e5e55cd81ddbc856c0d77c8"
+        },
+        {
+          "name": "C Viper moves_dict.json",
+          "bytes": 11470293,
+          "modified": "2026-10-14T10:55:08",
+          "sha256": "c3d4149aba1df7ceda2b7023fd3551aa9547252790f716970de7b78d02e81c66"
+        },
+        {
+          "name": "C Viper Names.json",
+          "bytes": 15712,
+          "modified": "2026-10-14T10:55:03",
+          "sha256": "50638fbd0c0b5ff0e620b15f462842f09b2e15d1b3f45bb51883128ec925b083"
+        }
+      ],
+      "move_count": 542,
+      "null_resources": [
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "30": 337
+      }
+    },
+    {
+      "id": 31,
+      "name": "Alex",
+      "files": [
+        {
+          "name": "Alex HIT_DT.json",
+          "bytes": 13770549,
+          "modified": "2026-10-14T10:55:16",
+          "sha256": "97e9994db9c4fefb145b2ed8e6060c7aef557816653124b22e67339c786153c1"
+        },
+        {
+          "name": "Alex triggers.json",
+          "bytes": 924824,
+          "modified": "2026-10-14T10:55:16",
+          "sha256": "18a70807f6b20a1e0595a2e33a1f6356a2c84363125f23be08fde2c45ba99603"
+        },
+        {
+          "name": "Alex atemi.json",
+          "bytes": 1140,
+          "modified": "2026-10-14T10:55:16",
+          "sha256": "dcc4c1c8c34497ed02d6d75cee71c512558feae88745cd5fddcf534b8b2cd981"
+        },
+        {
+          "name": "Alex tgroups.json",
+          "bytes": 12955,
+          "modified": "2026-10-14T10:55:16",
+          "sha256": "7de286152db63487b484deb8701fdd8f769ff9d52ebd7d2970a048ad8b98e62f"
+        },
+        {
+          "name": "Alex rects.json",
+          "bytes": 205358,
+          "modified": "2026-10-14T10:55:16",
+          "sha256": "ee2a55021b96a4411672a22ffb01a8af154cb85fca3e1e8180be9aa546b4ad91"
+        },
+        {
+          "name": "Alex commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-14T10:55:16",
+          "sha256": "48ae451507bd11c8debb029cec4ba9196dea587173753dbfed803e289ad4ab43"
+        },
+        {
+          "name": "Alex charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:55:16",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Alex char_info.json",
+          "bytes": 13082,
+          "modified": "2026-10-14T10:55:16",
+          "sha256": "003f799dad33946dcce310451ec8e5d65af5318138b077c9ad96adc769b7c6e9"
+        },
+        {
+          "name": "Alex assist_combo.json",
+          "bytes": 349000,
+          "modified": "2026-10-14T10:55:17",
+          "sha256": "6d5d147bf3a5a21051e8a4b3c0ecd9a367d4d8fb56b594bc9f41b3d3f79fe031"
+        },
+        {
+          "name": "Alex moves_dict.json",
+          "bytes": 16743823,
+          "modified": "2026-10-14T10:55:20",
+          "sha256": "956a75d7ae0a6dadc454a639f7637f2571d74c1afe9ef9cdcd2e5a2ba8bd0cf8"
+        },
+        {
+          "name": "Alex Names.json",
+          "bytes": 16113,
+          "modified": "2026-10-14T10:55:13",
+          "sha256": "4fa748f288c6c96b71e5c8076b1c03529f4c25e61fbbbeafc2db27a8365f782c"
+        }
+      ],
+      "move_count": 554,
+      "null_resources": [
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "31": 352
+      }
+    },
+    {
+      "id": 32,
+      "name": "Ingrid",
+      "files": [
+        {
+          "name": "Ingrid HIT_DT.json",
+          "bytes": 15279555,
+          "modified": "2026-10-14T10:55:29",
+          "sha256": "2865e11951181a1b81357a0e64908008a93dea1f5640919c9ac9ca0b557c4ea2"
+        },
+        {
+          "name": "Ingrid triggers.json",
+          "bytes": 911988,
+          "modified": "2026-10-14T10:55:29",
+          "sha256": "f7ba693d493d51d6f1d0a8d83abf4d101c984da416eace23ea42a9d587e58fed"
+        },
+        {
+          "name": "Ingrid atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:55:29",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Ingrid tgroups.json",
+          "bytes": 15778,
+          "modified": "2026-10-14T10:55:29",
+          "sha256": "0ad5a732f73187ed7a000b78f5b2917ad5c494d56c01c132a48eb3042a057091"
+        },
+        {
+          "name": "Ingrid rects.json",
+          "bytes": 235651,
+          "modified": "2026-10-14T10:55:29",
+          "sha256": "813ff3a39cc0d1228e0b03519f5d9654ccae615b22b40e6694cbee1f1bb7bc28"
+        },
+        {
+          "name": "Ingrid commands.json",
+          "bytes": 521323,
+          "modified": "2026-10-14T10:55:29",
+          "sha256": "1c590b1600ffb5b8523832f40b891ee35b0dc3a614d8787f0ce7aac1db5e2f6c"
+        },
+        {
+          "name": "Ingrid charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:55:29",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Ingrid char_info.json",
+          "bytes": 10012,
+          "modified": "2026-10-14T10:55:29",
+          "sha256": "21ee7f62d3ff588096657fb0eff002c1c80596d12516dd36c00701369f5cc82b"
+        },
+        {
+          "name": "Ingrid assist_combo.json",
+          "bytes": 349352,
+          "modified": "2026-10-14T10:55:29",
+          "sha256": "d749f7667ff771eedec88698fb53f170dc869f354921183b2624204f926333da"
+        },
+        {
+          "name": "Ingrid moves_dict.json",
+          "bytes": 18044119,
+          "modified": "2026-10-14T10:55:33",
+          "sha256": "1cc0df36c6a396eea859fc28a6da1cf0d7475bdbe11214274f4ad740bca3593b"
+        },
+        {
+          "name": "Ingrid Names.json",
+          "bytes": 20203,
+          "modified": "2026-10-14T10:55:25",
+          "sha256": "c54ad554d7aee26315e15d3bb4889315c208195b9b1fa64718becb48a9e888fe"
+        }
+      ],
+      "move_count": 666,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "32": 375,
+        "22": 6
+      }
+    },
+    {
+      "id": 33,
+      "name": "Yasmine",
+      "files": [
+        {
+          "name": "Yasmine HIT_DT.json",
+          "bytes": 15080958,
+          "modified": "2026-10-14T10:55:41",
+          "sha256": "7fe6aa1e1941f61f0f49c670467be2af601135050868b662c8e63d97e5b75557"
+        },
+        {
+          "name": "Yasmine triggers.json",
+          "bytes": 1075271,
+          "modified": "2026-10-14T10:55:41",
+          "sha256": "5eec48fda3506c57d46a50f73ddb9c4fbd9e7d18a059fe60f1b653a91bdaae20"
+        },
+        {
+          "name": "Yasmine atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:55:41",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Yasmine tgroups.json",
+          "bytes": 25025,
+          "modified": "2026-10-14T10:55:41",
+          "sha256": "c58754928e0077fede302a73f97bf402935f84a2ec238045dee040d898b2f6bf"
+        },
+        {
+          "name": "Yasmine rects.json",
+          "bytes": 205383,
+          "modified": "2026-10-14T10:55:41",
+          "sha256": "676af8879f9c8f5a1b8d156942f1e87b15209f8a8e1c2ee59566f596c53cadd3"
+        },
+        {
+          "name": "Yasmine commands.json",
+          "bytes": 481178,
+          "modified": "2026-10-14T10:55:42",
+          "sha256": "126885f13ab77e3ee5b215c92d858f78c172ffdaf4bfae2fb523baf8a9199882"
+        },
+        {
+          "name": "Yasmine charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:55:42",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Yasmine char_info.json",
+          "bytes": 15035,
+          "modified": "2026-10-14T10:55:42",
+          "sha256": "142feecfc41d382dfb96e1be09ed8474fade6564e17b9045ddaf59241c89da3b"
+        },
+        {
+          "name": "Yasmine assist_combo.json",
+          "bytes": 349175,
+          "modified": "2026-10-14T10:55:42",
+          "sha256": "fc51ce40ebc1d145b015d0c069a88c10a5af845f3d899f430bc228a14ea57310"
+        },
+        {
+          "name": "Yasmine moves_dict.json",
+          "bytes": 16383625,
+          "modified": "2026-10-14T10:55:45",
+          "sha256": "d6ba81ebba61aaee9843c1e1fa6f676eb512aa302e0124a75d2b7e5061c6c0a8"
+        },
+        {
+          "name": "Yasmine Names.json",
+          "bytes": 17652,
+          "modified": "2026-10-14T10:55:38",
+          "sha256": "a02dc30ef5bc3c3113bb307ae4a1369fcb6d79dee3c0945edaaad54109cc0930"
+        }
+      ],
+      "move_count": 603,
+      "null_resources": [
+        "atemi",
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "33": 376
+      }
+    },
+    {
+      "id": 34,
+      "name": "Arjun",
+      "files": [
+        {
+          "name": "Arjun HIT_DT.json",
+          "bytes": 11566558,
+          "modified": "2026-10-14T10:55:52",
+          "sha256": "2dd7e499d8fb0d469e0ce2c601228c54169db5461d2f8cdf54c2956c027af279"
+        },
+        {
+          "name": "Arjun triggers.json",
+          "bytes": 876296,
+          "modified": "2026-10-14T10:55:53",
+          "sha256": "a0f7ee514e5780d34b15fa370d4584cbd17c5e0dded0e5a0fe5fafca1a9e0ee5"
+        },
+        {
+          "name": "Arjun atemi.json",
+          "bytes": 2269,
+          "modified": "2026-10-14T10:55:53",
+          "sha256": "8d8351eb805b48c93ea094784141c2777b708a3133ab13c1b3b35320139b8bdd"
+        },
+        {
+          "name": "Arjun tgroups.json",
+          "bytes": 12138,
+          "modified": "2026-10-14T10:55:53",
+          "sha256": "cd6758e96079c48668cdcdb6ec24ae7a4624827fba01725b3da4a2b94d3b1051"
+        },
+        {
+          "name": "Arjun rects.json",
+          "bytes": 303263,
+          "modified": "2026-10-14T10:55:53",
+          "sha256": "434e72d19f0d088f565e87937527e031e352c302ba294a65f3fc6ca1484c49a0"
+        },
+        {
+          "name": "Arjun commands.json",
+          "bytes": 481172,
+          "modified": "2026-10-14T10:55:53",
+          "sha256": "48ae451507bd11c8debb029cec4ba9196dea587173753dbfed803e289ad4ab43"
+        },
+        {
+          "name": "Arjun charge.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:55:53",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "Arjun char_info.json",
+          "bytes": 10049,
+          "modified": "2026-10-14T10:55:53",
+          "sha256": "77d4c0bcd190dfa927133aa544b8c57f85ec321872f1abf60caa0f354f14afb1"
+        },
+        {
+          "name": "Arjun assist_combo.json",
+          "bytes": 349038,
+          "modified": "2026-10-14T10:55:53",
+          "sha256": "aaa2cbb92d042160ce6b739861f37cf4554065cde4bde976a32a8bd9f2fe67cf"
+        },
+        {
+          "name": "Arjun moves_dict.json",
+          "bytes": 17902216,
+          "modified": "2026-10-14T10:55:57",
+          "sha256": "28c8047ff267b3fbd6058d241e2e33e6d4584df01ff62e5029981b069188b88a"
+        },
+        {
+          "name": "Arjun Names.json",
+          "bytes": 17400,
+          "modified": "2026-10-14T10:55:50",
+          "sha256": "568fe0cd085eae199a8e20fc229bb6957055a6b3d1b649400f9bd05029be5250"
+        }
+      ],
+      "move_count": 592,
+      "null_resources": [
+        "charge"
+      ],
+      "motion_resource_id_counts": {
+        "34": 339,
+        "17": 6
+      }
+    }
+  ],
+  "common_files": [
+    {
+      "name": "common_moves.json",
+      "bytes": 2820701,
+      "sha256": "8072f902da7ca433d348c077c89609c8f558e528291bd185eec306f16f9b5a9f",
+      "modified": "2026-10-14T10:49:59"
+    },
+    {
+      "name": "common_rects.json",
+      "bytes": 47769,
+      "sha256": "fd3388ab78102abae844623bc75f4374bcc6c4ac7555976ecbc91258c5e87fc8",
+      "modified": "2026-10-14T10:49:59"
+    },
+    {
+      "name": "common_atemi.json",
+      "bytes": 5675,
+      "sha256": "d803401433e125f8bf4d90474d1ae742bc49763eac8b7557a7aafdd1621295f4",
+      "modified": "2026-10-14T10:49:59"
+    },
+    {
+      "name": "common_names.json",
+      "bytes": 10572,
+      "sha256": "f96524d9e599ebaf412a5f600952418318e0bda831eed2d8bf6a1e919a8cacb1",
+      "modified": "2026-10-14T10:49:59"
+    },
+    {
+      "name": "common_act_id.json",
+      "bytes": 14055,
+      "sha256": "68bbe20c6df5ad20e3b31ad83e16bde91e33b72ac942075dcf24b6a537ab439b",
+      "modified": "2026-10-14T10:49:59"
+    },
+    {
+      "name": "common_manifest.json",
+      "bytes": 338,
+      "sha256": "d0f8cdbddc1cd3cc38200e79a4fadc22be2499a769ad54d80e923b3ba1a60d92",
+      "modified": "2026-10-14T10:49:59"
+    }
+  ],
+  "common_action_count": 369,
+  "errors": [],
+  "root": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Street Fighter 6\\reframework\\data\\MMDK\\PlayerData",
+  "tables_source": {
+    "path": "C:\\Users\\13429\\Desktop\\sf6-ai-coach\\MMDK\\MMDK\\reframework\\autorun\\MMDK\\tables.lua",
+    "sha256": "f0ef7f77472a5e035f4cc742fe3728153457cf4d03ced393a7ce078e80c8c17f"
+  },
+  "require_common": true
+}

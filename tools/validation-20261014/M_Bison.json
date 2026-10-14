@@ -1,0 +1,130 @@
+{
+  "ok": true,
+  "since": "2026-10-14T10:30:30",
+  "fighter_count": 1,
+  "fighter_file_count": 11,
+  "common_file_count": 6,
+  "file_count": 17,
+  "fighters": [
+    {
+      "id": 26,
+      "name": "M Bison",
+      "files": [
+        {
+          "name": "M Bison HIT_DT.json",
+          "bytes": 14985799,
+          "modified": "2026-10-14T10:31:04",
+          "sha256": "796e7b5019eaabc2e101a4f6da7c1aa0a1d8215a2cd9c02f71c94c9860718885"
+        },
+        {
+          "name": "M Bison triggers.json",
+          "bytes": 785830,
+          "modified": "2026-10-14T10:31:04",
+          "sha256": "9e54ae0e41f1955985a81459a9ba18de8a5a4a751d9c95b0b4978ba18eb00afe"
+        },
+        {
+          "name": "M Bison atemi.json",
+          "bytes": 4,
+          "modified": "2026-10-14T10:31:04",
+          "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        {
+          "name": "M Bison tgroups.json",
+          "bytes": 14208,
+          "modified": "2026-10-14T10:31:04",
+          "sha256": "1d56114164c460afbe4069df5ce34defcde404cdee9d2b4d0cc459b659f3698a"
+        },
+        {
+          "name": "M Bison rects.json",
+          "bytes": 277181,
+          "modified": "2026-10-14T10:31:04",
+          "sha256": "116ba50dcb36ccc79e82837adfdf773497f985afd342256cce12217a571dfd9a"
+        },
+        {
+          "name": "M Bison commands.json",
+          "bytes": 534624,
+          "modified": "2026-10-14T10:31:04",
+          "sha256": "90004e9ee28b0de5b03cfad45960bcbe0d5b5b2d34a9b1144df887924cc4923a"
+        },
+        {
+          "name": "M Bison charge.json",
+          "bytes": 859,
+          "modified": "2026-10-14T10:31:04",
+          "sha256": "a2ed6068b1c2eb73a9e4d15650fe56dac8ab7144d554507b43a9ace2d4554ba8"
+        },
+        {
+          "name": "M Bison char_info.json",
+          "bytes": 10047,
+          "modified": "2026-10-14T10:31:04",
+          "sha256": "b55317292d5cc42c04e52b04fef6339ccd79657d13b3740426d849230e1b6d24"
+        },
+        {
+          "name": "M Bison assist_combo.json",
+          "bytes": 349064,
+          "modified": "2026-10-14T10:31:04",
+          "sha256": "92c4fd89ff44ea34e7b9aabb23b110b382dd3392d0d91ed8c9874b2581e322f6"
+        },
+        {
+          "name": "M Bison moves_dict.json",
+          "bytes": 19049701,
+          "modified": "2026-10-14T10:31:09",
+          "sha256": "cf5ee7bc65945dfdb339ceaf7462f8445c1c2b9f67ab41ea64cc9f444f959302"
+        },
+        {
+          "name": "M Bison Names.json",
+          "bytes": 22424,
+          "modified": "2026-10-14T10:31:00",
+          "sha256": "e7baf95397561b979f635a87678f7d749db1af7bf4e3cb51896e547f0c65c48a"
+        }
+      ],
+      "move_count": 665,
+      "null_resources": [
+        "atemi"
+      ],
+      "motion_resource_id_counts": {
+        "26": 543,
+        "2": 6
+      }
+    }
+  ],
+  "common_files": [
+    {
+      "name": "common_moves.json",
+      "bytes": 2820701,
+      "sha256": "8072f902da7ca433d348c077c89609c8f558e528291bd185eec306f16f9b5a9f",
+      "modified": "2026-10-14T10:32:48"
+    },
+    {
+      "name": "common_rects.json",
+      "bytes": 47769,
+      "sha256": "fd3388ab78102abae844623bc75f4374bcc6c4ac7555976ecbc91258c5e87fc8",
+      "modified": "2026-10-14T10:32:48"
+    },
+    {
+      "name": "common_atemi.json",
+      "bytes": 5675,
+      "sha256": "d803401433e125f8bf4d90474d1ae742bc49763eac8b7557a7aafdd1621295f4",
+      "modified": "2026-10-14T10:32:48"
+    },
+    {
+      "name": "common_names.json",
+      "bytes": 10572,
+      "sha256": "f96524d9e599ebaf412a5f600952418318e0bda831eed2d8bf6a1e919a8cacb1",
+      "modified": "2026-10-14T10:32:48"
+    },
+    {
+      "name": "common_act_id.json",
+      "bytes": 14055,
+      "sha256": "68bbe20c6df5ad20e3b31ad83e16bde91e33b72ac942075dcf24b6a537ab439b",
+      "modified": "2026-10-14T10:32:48"
+    },
+    {
+      "name": "common_manifest.json",
+      "bytes": 338,
+      "sha256": "d0f8cdbddc1cd3cc38200e79a4fadc22be2499a769ad54d80e923b3ba1a60d92",
+      "modified": "2026-10-14T10:32:48"
+    }
+  ],
+  "common_action_count": 369,
+  "errors": []
+}

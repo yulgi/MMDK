@@ -25,12 +25,14 @@ local cooldown_frames = 0
 local starting_p2_id = nil
 local last_switch_details = "No switch requested yet."
 local last_switch_returns = ""
+local common_exported = false
+local common_summary = nil
 
 local READY_FRAMES = 20
 local TIMEOUT_FRAMES = 3600
 local NEXT_FIGHTER_DELAY_FRAMES = 120
 local JOB_KEY = "mmdk_batch_dump_current_character"
-local SCRIPT_VERSION = "2026-10-12.13"
+local SCRIPT_VERSION = "2026-10-14.2"
 
 local function message(value)
     last_message = value
@@ -110,6 +112,7 @@ local function ready_data(id)
     if not data.triggers_by_act_id or not data.rects or not data.commands or not data.tgroups then return nil, "move resources are not ready" end
     if not data.atemi or not data.charge or not data.char_info or not data.assist_combo then return nil, "supplemental resources are not ready" end
     if not data.moves_dict or not data.moves_dict.By_Name or not next(data.moves_dict.By_Name) then return nil, "moves dictionary is empty" end
+    if not data.common_moves_collected then return nil, "waiting for common actions to be collected" end
     return data
 end
 
@@ -124,6 +127,12 @@ local function dump_character(data)
     end
     local step = ""
     local ok, err = pcall(function()
+        if not common_exported then
+            step = "common resources"
+            log.info("MMDK Batch Dump: Exporting common actions, rects, atemi and ACT_ID")
+            common_summary = data:dump_common_json()
+            common_exported = true
+        end
         local methods = {
             {"HIT_DT", "dump_hit_dt_json"},
             {"triggers", "dump_trigger_json"},
@@ -195,6 +204,10 @@ local function start(resume)
         stop_with_error("MMDK.lua is not loaded.")
         return
     end
+    if not PlayerData.dump_common_json then
+        stop_with_error("Update MMDK.lua together with MMDK_BatchDump.lua, then Reset scripts.")
+        return
+    end
     local ok, manager, descs = pcall(training_objects)
     if not ok or not manager or not descs then
         stop_with_error("Enter Training Mode before starting.")
@@ -208,6 +221,7 @@ local function start(resume)
         local selected, err = parse_ids(ids_text)
         if not selected then stop_with_error(err); return end
         queue, index, completed = selected, 1, {}
+        common_exported, common_summary = false, nil
         last_switch_details = "No switch requested yet."
         last_switch_returns = ""
     end
@@ -234,6 +248,9 @@ local function start(resume)
         option.enabled = name ~= "All Characters"
     end
     mmsettings.enabled = true
+    -- Common moves are intentionally enabled after the batch as well.
+    -- A previously built dictionary without common data is rebuilt by ready_data.
+    mmsettings.do_common_dict = true
     phase = "request"
     message("Starting at " .. index .. "/" .. #queue .. ".")
 end
@@ -344,7 +361,8 @@ re.on_draw_ui(function()
     imgui.text("Training Mode: cycles P2 through the selected character IDs.")
     local changed, value = imgui.input_text("Character IDs", ids_text)
     if changed and (phase == "idle" or phase == "done" or phase == "error" or phase == "stopped") then ids_text = value end
-    imgui.text("Example: 1-22,25-33. IDs must exist in MMDK/tables.lua.")
+    imgui.text("Example: 1-22,25-34. IDs are game resource IDs, not roster positions.")
+    imgui.text("Common moves are collected and shared resources are exported automatically.")
     imgui.text("Moveset mods are disabled during the batch and restored afterward.")
     if phase == "idle" or phase == "done" or phase == "error" or phase == "stopped" then
         if imgui.button("Start new batch") then start(false) end
@@ -367,5 +385,7 @@ re.on_draw_ui(function()
         imgui.text("Waiting before next fighter: " .. cooldown_frames .. " frames")
     end
     imgui.text("Output: reframework/data/MMDK/PlayerData/<character>/")
+    if common_summary then imgui.text("Common actions exported: " .. common_summary.action_entries) end
+    imgui.text("Shared output: reframework/data/MMDK/PlayerData/common_*.json")
     imgui.tree_pop()
 end)

@@ -107,7 +107,7 @@ local default_mmsettings = {
 	enabled = true,
 	p1_hud = true,
 	p2_hud = true,
-	do_common_dict = false,
+	do_common_dict = true,
 	research_enabled = false,
 	research_p2 = false,
 	transparent_window = false,
@@ -295,6 +295,7 @@ PlayerData = {
 	--Populate the moves_dict in full:
 	collect_moves_dict = function(self)
 		self.moves_dict = {By_Name = {}, By_ID = {}, By_Index = {}}
+		self.common_moves_collected = false
 		--local act_list = lua_get_dict(self.person.FAB.StyleDict[0].ActionList, true, function(a, b) return a.ActionID < b.ActionID end)
 		--for i=0, #act_list do
 		--	self:collect_fab_action(act_list[i])
@@ -312,6 +313,7 @@ PlayerData = {
 			for i=0, #act_list do
 				common_move_dict[act_list[i].ActionID] = self:collect_fab_action(act_list[i], true) or common_move_dict[act_list[i].ActionID]
 			end
+			self.common_moves_collected = true
 		end
 		self:collect_additional()
 		
@@ -334,13 +336,11 @@ PlayerData = {
 		
 		if is_common then 
 			if self.moves_dict.By_ID[act_id] then return end --Prioritize non-common moves
-			if common_move_dict[act_id] then --Collect non-common moves first
-				move = common_move_dict[act_id]
-				goto finish
-			end
+			-- Build fresh Lua relationships per fighter. Cached moves can contain
+			-- another fighter's names, branches and animation-derived metadata.
 		end
 		
-		if self.player_index then --if its a player and not a simple_fighter_data
+		if self.player_index and not is_common then --character-specific projectile data
 			if move.fab.Projectile.DataIndex > -1 then
 				move.pdata = self.projectile_datas[move.fab.Projectile.DataIndex]
 				move.vfx = move.vfx or move.pdata and self.vfx_by_ctr_id[move.pdata.VfxID] and {
@@ -431,7 +431,7 @@ PlayerData = {
 						move.dmg[key.Param02] = self.hit_datas[key.Param02]
 					end
 					
-					if self.player_index then
+					if self.player_index and not is_common then
 						
 						--[[if keytype_name:find("SEKey") or keytype_name == "VoiceKey" then
 							move[keytype_name].sfx = move[keytype_name].sfx or {}
@@ -481,7 +481,10 @@ PlayerData = {
 			name = move.name
 		end
 		
-		::finish::
+		if is_common then
+			name = get_unique_name(name, self.moves_dict.By_Name)
+			move.name = name
+		end
 		self.moves_dict.By_Name[name] = move
 		self.moves_dict.By_ID[act_id] = move
 		self.moves_dict.By_Index[#self.moves_dict.By_Index+1] = move
@@ -617,6 +620,45 @@ PlayerData = {
 		return json_data
 	end,
 	
+	-- Export the full common FAB independently of the selected fighter's
+	-- overrides. common_move_dict deliberately omits overridden IDs, so it is
+	-- not a complete source for an offline shared-action library.
+	dump_common_json = function(self)
+		local resource = gResource.Data[6]
+		assert(resource and resource.FAB and resource.Rect, "Common battle resources are not ready")
+		local common = setmetatable({
+			name="Common", chara_id=0, person=resource,
+			moves_dict={By_Name={}, By_ID={}, By_Index={}},
+			rects={}, hit_datas={}, triggers_by_act_id={}, tgroups={},
+		}, PlayerData)
+		for i=0, 13 do common.rects[i] = {} end
+		for i, dict in pairs(resource.Rect.RectList) do
+			common.rects[i] = lua_get_dict(dict)
+		end
+		local count = 0
+		for style_id=0, resource.FAB:GetStyleNum()-1 do
+			for _, action in pairs(lua_get_dict(resource.FAB.StyleDict[style_id].ActionList)) do
+				local move = common:collect_fab_action(action)
+				move._PL_StyleID = style_id
+				count = count + 1
+			end
+		end
+		assert(count > 0 and next(common.moves_dict.By_ID), "Common actions are empty")
+		local prefix = "MMDK\\PlayerData\\"
+		common:dump_moves_dict_json(prefix .. "common_moves.json")
+		common:dump_rects_json(prefix .. "common_rects.json")
+		common:dump_atemi_json(prefix .. "common_atemi.json", lua_get_dict(resource.Atemi))
+		local names = {}
+		for id, move in pairs(common.moves_dict.By_ID) do names[string.format("%04d", id)] = move.name end
+		json.dump_file(prefix .. "common_names.json", names)
+		json.dump_file(prefix .. "common_act_id.json", act_id_enum.enum)
+		local info = {source="gBattle.Resource.Data[6].FAB", chara_id=0,
+			style_count=resource.FAB:GetStyleNum(), action_entries=count,
+			character_overrides_applied=false,
+			files={"common_moves.json", "common_rects.json", "common_atemi.json", "common_names.json", "common_act_id.json"}}
+		json.dump_file(prefix .. "common_manifest.json", info)
+		return info
+	end,
 	--Dumps a json file of this PlayerData's atemis. 'atemis' and 'path' are optional
 	dump_atemi_json = function(self, path, atemis)
 		atemis = atemis or self.atemi

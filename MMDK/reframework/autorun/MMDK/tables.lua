@@ -1,7 +1,8 @@
 -- MMDK - Moveset Mod Development Kit for Street Fighter 6 -- Shared Tables
 -- By alphaZomega
--- Character IDs below match the game's pl_type / FighterId values.
--- Update this list only after a fighter is available in the installed game.
+-- Resource / pl_type IDs are NOT the consecutive order in character select.
+-- IDs 23 and 24 are unassigned here; DLC resource IDs continue at 25.
+-- Keep this mapping aligned with live gBattle IDs and esfXXX motion resources.
 
 local characters = { 
 	[1] = "Ryu", 
@@ -26,16 +27,16 @@ local characters = {
 	[20] = "E Honda", 
 	[21] = "Jamie", 
 	[22] = "Akuma", 
-	[23] = "M Bison", 
-	[24] = "Terry", 
-	[25] = "Mai",
-	[26] = "Elena",
-    [27] = "Sagat",
-	[28] = "C Viper",
-	[29] = "Alex",
-	[30] = "Ingrid",
-	[31] = "Yasmine",
-    [32] = "Arjun"
+	[25] = "Sagat",
+	[26] = "M Bison",
+	[27] = "Terry",
+	[28] = "Mai",
+	[29] = "Elena",
+	[30] = "C Viper",
+	[31] = "Alex",
+	[32] = "Ingrid",
+	[33] = "Yasmine",
+	[34] = "Arjun"
 }
 
 --Table of indexes into the param of a HIT_DT_TBL, labelled by their purpose

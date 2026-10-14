@@ -36,21 +36,28 @@ local function scenario(mode)
         error('Global TrainingManager.Apply must not be used for character switching')
     end
     local function make_data(id)
-        local d={chara_id=id,name=chars[id],person={},engine={},hit_datas={},triggers_by_act_id={},rects={},commands={},tgroups={},atemi={},charge={},char_info={},assist_combo={},moves_dict={By_Name={move={}}}}
+        local d={chara_id=id,name=chars[id],person={},engine={},hit_datas={},triggers_by_act_id={},rects={},commands={},tgroups={},atemi={},charge={},char_info={},assist_combo={},moves_dict={By_Name={move={}}},common_moves_collected=mode~='needs_common' or mmsettings and mmsettings.do_common_dict==true}
         for _,name in ipairs({'hit_dt','trigger','atemi','tgroups','rects','commands','charge','char_info','assist_combo','moves_dict'}) do
             d['dump_'..name..'_json']=function(self)
                 assert(live==self.chara_id,'Exported stale fighter data')
                 json.dump_file(self.name..'/'..name,{})
             end
         end
+        d.dump_common_json=function(self)
+            for _,name in ipairs({'moves','rects','atemi','names','act_id','manifest'}) do
+                json.dump_file('common_'..name..'.json',{})
+            end
+            return {action_entries=123}
+        end
         return d
     end
+    mmsettings=nil
     player_data={[2]=make_data(1)};tmp_fns={};engines={[2]={}}
-    PlayerData={new=function(_,i) player_data[i]=make_data(live) end}
-    mmsettings={enabled=false,fighter_options={}}
+    PlayerData={new=function(_,i) player_data[i]=make_data(live) end,dump_common_json=true}
+    mmsettings={enabled=false,do_common_dict=false,fighter_options={}}
     for _,name in ipairs({'All Characters','Ryu','Luke','Kimberly'}) do mmsettings.fighter_options[name]={enabled=true,ordered={'test'},test={enabled=true}} end
     log={info=function(s) messages[#messages+1]=s end}
-    json={dump_file=function(path) if mode=='write_failure' then return false end;writes[path]=true;return true end}
+    json={dump_file=function(path) if mode=='write_failure' or mode=='common_write_failure' and path=='common_rects.json' then return false end;writes[path]=(writes[path] or 0)+1;return true end}
     sdk={get_managed_singleton=function() return manager end,find_type_definition=function() return {get_field=function() return {get_data=function() return {mPlayerType={[1]={mValue=live}}} end} end} end}
     re={on_application_entry=function(name,fn) assert(name=='UpdateBehavior');callbacks.update=fn end,on_draw_ui=function(fn) callbacks.ui=fn end}
     imgui={tree_node=function() return true end,tree_pop=function() end,text=function() end,input_text=function() return true,'1,2,3' end,button=function(label) if label==button then button=nil;return true end;return false end}
@@ -66,15 +73,18 @@ local function scenario(mode)
         if last:find('Finished') or last:find('Timed out') or last:find('Cannot load') or last:find('Export failed') then break end
     end
     local last=messages[#messages] or ''
-    if mode=='success' then
+    if mode=='success' or mode=='needs_common' then
         assert(last:find('Finished 3 characters'),last)
-        local count=0;for _ in pairs(writes) do count=count+1 end;assert(count==30,count)
+        local count=0;for _ in pairs(writes) do count=count+1 end;assert(count==36,count)
+        assert(writes['common_moves.json']==1,'Common export ran more than once')
+        assert(mmsettings.do_common_dict==true,'Common collection was not enabled')
     elseif mode=='stop' then assert(last:find('Stopped'),last)
     elseif mode=='write_failure' then assert(last:find('Export failed for Ryu'),last)
+    elseif mode=='common_write_failure' then assert(last:find('common resources'),last);assert(not writes['Ryu/hit_dt'])
     elseif mode=='missing_reload' then assert(last:find('did not request a character reload'),last)
     elseif mode=='no_load' then assert(last:find('Timed out waiting for Luke'),last);assert(not writes['Luke/hit_dt']) end
     assert(mmsettings.enabled==false,'Settings not restored')
     for _,o in pairs(mmsettings.fighter_options) do assert(o.enabled and o.test.enabled) end
     print('PASS '..mode..' ('..ticks..' frames)')
 end
-for _,mode in ipairs({'success','no_load','missing_reload','stop','write_failure'}) do scenario(mode) end
+for _,mode in ipairs({'success','needs_common','no_load','missing_reload','stop','write_failure','common_write_failure'}) do scenario(mode) end

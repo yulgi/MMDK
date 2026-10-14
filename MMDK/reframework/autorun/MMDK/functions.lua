@@ -513,7 +513,9 @@ local function convert_to_json_tbl(tbl_or_object, max_layers, skip_arrays, skip_
 						if not method:is_static() and method:get_num_params() == 0 and name:find("[Gg]et") == 1 and not method:get_return_type():is_a("via.Component") then
 							local try, mdata = pcall(method.call, method, obj)
 							if try and mdata ~= nil then
-								if not skip_method_objs and sdk.is_managed_object(mdata) and (obj[name:gsub("[Gg]et", "set")] or obj[name:gsub("[Gg]et", "Set")]) then
+								-- is_managed_object accepts numeric addresses too. A primitive
+								-- getter result must never be treated as an object/add_ref target.
+								if not skip_method_objs and type(mdata) == "userdata" and sdk.is_managed_object(mdata) and mdata.add_ref and (obj[name:gsub("[Gg]et", "set")] or obj[name:gsub("[Gg]et", "Set")]) then
 									new_tbl[name:gsub("[Gg]et", "")] = get_non_null_value(recurse(mdata:add_ref(), layer_no + 1) or mdata)
 								else
 									new_tbl[name:gsub("[Gg]et", "")] = get_non_null_value(mdata) 
